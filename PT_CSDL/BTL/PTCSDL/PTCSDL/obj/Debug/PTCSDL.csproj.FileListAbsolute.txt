@@ -1,0 +1,11 @@
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\bin\Debug\PTCSDL.exe.config
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\bin\Debug\PTCSDL.exe
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\bin\Debug\PTCSDL.pdb
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.csproj.ResolveComReference.cache
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.Form1.resources
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.exe
+C:\Users\ADMIN\OneDrive - University of transport and Communication\Máy tính\PT CSDL\BTL\PTCSDL\PTCSDL\obj\Debug\PTCSDL.pdb
