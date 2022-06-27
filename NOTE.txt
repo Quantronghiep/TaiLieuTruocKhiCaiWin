@@ -1,0 +1,7 @@
+token : glpat-1ZKtoUaz6BHkC-SVs5Tw
+
+CREATE LARAVEL  : composer create-project --prefer-dist laravel/laravel:8.* laravel8
+- ktra chay chua : php -S localhost:8080  or php artisan serve
+- tao db : php artisan make:migration contract_table
+- chay create db : php artisan migrate  
+- create request :  php artisan make:request UserCreateRequest
