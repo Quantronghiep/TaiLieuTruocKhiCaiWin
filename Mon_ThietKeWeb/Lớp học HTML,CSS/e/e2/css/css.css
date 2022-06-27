@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+.phantren {
+    width: 100%;
+    height: 100px;
+    background: lightblue;
+    margin-bottom: 10px ;
+}
+.phangiua{
+	   width: 100%;
+    height: 200px;
+    background: #de2cb0;
+
+}
+.phanduoi{
+	width: 100%;
+	height: 100px;
+	background: yellow;
+}
+.trai{
+	  width: 30%;
+    height: 200px;
+    background: black;
+    float : left;
+
+}
+.mid{
+	   width: 40%;
+    height: 200px;
+    background: gray;
+    float :left;
+}
+.phai{
+	  width: 30%;
+    height:200px;
+    background: purple;
+    float: left;
+
+}

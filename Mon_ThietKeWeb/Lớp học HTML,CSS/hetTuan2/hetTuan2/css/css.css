@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style : none ;
+	float : left;
+	background: red ;
+	margin: 1px;
+	padding: 10px ;
+	color: white ;
+	}
+ul{
+	float: right;
+	padding-top: 40px;
+	margin: 100px ;
+}
+.phantren {
+	width: 100%;
+	height: 100px;
+	background: #ab673a;
+	margin-bottom: 10px
+}
+.phangiua {
+	width: 100%;
+	height: 600px;
+	background: red;
+}
+
+.trai {
+	width: 30%;
+	float: left;
+	height: 600px;
+	background: yellow;
+}
+
+.mid {
+	width: 40%;
+	float: left;
+	height: 600px;
+	background: gray;
+}
+
+.phai {
+	width: 30%;
+	float: left;
+	height: 600px;
+	background: purple;
+}
+
+
+.phanduoi {
+	margin-top: 30px;
+	width: 100%;
+	height: 100px;
+	background: yellow;
+}
+.logo{
+	width: 10%;
+	padding-top: 35px ;
+	float :left;
+	padding-left: 30px ;
+}
+.mot{
+	background: green ;
+	width: 90%;
+	height: 5%;
+	margin: auto; 
+	margin-top: 15px ;
+	margin-bottom: 10px ;
+}
+.hai{
+	color: white ;
+	width: 90%;
+	height: 30px ;
+	margin: 50px ;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	
+}
+table{
+	margin: auto;
+	text-align: right;
+}

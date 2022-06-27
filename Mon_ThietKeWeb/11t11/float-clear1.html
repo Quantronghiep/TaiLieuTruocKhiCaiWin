@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.box{
+			float: left;
+			width: 33.33%;
+			padding: 50px ;
+		}
+		.clearfix::after{
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+</head>
+<body>
+	<h2>Grid of Boxes</h2>
+	<p>Float boxes side by side:</p>
+	<div class="clearfix">
+		<div class="box" style="background: red">
+			<p>hahaha</p>
+		</div>
+		<div class="box" style="background: blue">
+			<p>hihihi</p>
+		</div>
+		<div class="box" style="background: yellow">
+			<p>huhuhu</p>
+		</div>
+	</div>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quaerat explicabo, deleniti voluptates tempora, beatae non similique quae nihil obcaecati cupiditate ipsam omnis minus quo esse quam, voluptatum assumenda consectetur.</p>
+</body>
+</html>

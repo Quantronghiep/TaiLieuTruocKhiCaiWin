@@ -1,0 +1,44 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ClearFix</title>
+	<style>
+		div{
+			border:3px solid red;
+			padding: 5px;
+		}
+		.img1{
+			float: right;
+		}
+		.clearfix1{
+			overflow: hidden;
+		}
+		.clearfix2::after{
+			content: "";
+			clear: right; /*có thế :both*/ /*bên phải của thành phần k bị float*/
+			display: table;
+		}
+		.img2{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h2>Without ClearFix</h2>
+		<img class="img1" src="happy.jpg" alt="happy" width="170" height="170">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam debitis molestias pariatur molestiae beatae repellat libero alias voluptas rerum eius minus cumque, laboriosam esse. Fugit fuga nobis beatae deserunt mollitia.
+	</div>
+	<p style="clear:right">Add a clearfix class with overflow: auto; to the containing element, to fix this problem:</p>
+	<div class="clearfix1">
+		<h2>Without ClearFix overflow</h2>
+		<img class="img2" src="happy.jpg" alt="happy" width="170" height="170">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam debitis molestias pariatur molestiae beatae repellat libero alias voluptas rerum eius minus cumque, laboriosam esse. Fugit fuga nobis beatae deserunt mollitia.
+	</div>
+	<p >Add the clearfix hack to the containing element, to fix this problem:</p>
+	<div class="clearfix2">
+		<h2>Without ClearFix</h2>
+		<img class="img2" src="happy.jpg" alt="happy" width="170" height="170">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam debitis molestias pariatur molestiae beatae repellat libero alias voluptas rerum eius minus cumque, laboriosam esse. Fugit fuga nobis beatae deserunt mollitia.
+	</div>
+</body>
+</html>

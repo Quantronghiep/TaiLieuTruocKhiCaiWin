@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css.css">
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td><label for="user">User id:</label></td>
+			<td>
+				<input type="text" id="user">
+				<span id="USER"></span>
+			</td>
+		</tr>
+		<tr>
+			<td ><label for="pass" >Password</label></td>
+			<td><input type="Password" id="pass"><span id="PASS"></span></td>
+		</tr>
+		<tr>
+			<td><label for="name">Name:</label></td>
+			<td><input type="text" id="name"><span id="NAME"></span></td>
+		</tr>
+		<tr>
+			<td><label for="adress">Address:</label></td>
+			<td><input type="text" id="adress"></td>
+		</tr>
+		<tr>
+			<td><label for="country">Country:</label></td>
+			<td>
+				<select name="" id="country">
+					<option value="">(Please select a country)</option>
+					<option value="VN">VietNam</option>
+					<option value="US">US</option>
+					<option value="LAO">LAO</option>
+
+
+				</select>
+				<span id="COUNTRY"></span>
+			</td>
+		</tr>
+		<td><label for="zip">ZIP code:</label></td>
+		<td><input type="text" id="zip"><span id="ZIP"></span></td>
+	</tr><tr>
+		<td><label for="email">Email:</label></td>
+		<td><input type="text" id="email"><span id="EMAIL"></span></td>
+	</tr>
+	<tr>
+		<td>Gender:</td>
+		<td>
+			<input type="radio" for="male" id="MALE" name="gender" value="Male" > Male 
+			<input type="radio" for="female" id="FEMALE" name="gender" value="Female"> FeMale 
+			<span id="GENDER"></span>
+
+		</td>
+	</tr>
+	<tr>
+		<td>Language:</td>
+		<td>
+			<input type="checkbox" id="check1" value="English">English
+			<input type="checkbox" id="check2" value ="NonEnglish">Non English
+			<span id="LANGUGE" ></span>
+		</td>
+	</tr>
+	<tr>
+		<td>About:</td>
+		<td>
+			<textarea name="" id="about"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><button onclick="checkabout()"  >Submit</button></td>
+	</tr>
+	
+</table>
+
+</body>
+</html>

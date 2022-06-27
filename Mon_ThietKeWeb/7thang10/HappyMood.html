@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Happy Mood</title>
+	<link rel="stylesheet" href="happyMood.css">
+	<style>
+			th, td {
+				padding: 3px;      
+				border: 1px solid blue;
+				}
+			/*th {
+				text-align: center;
+				}*/
+			tr#one td{
+			 border: 0px ;
+			}
+	</style>
+</head>
+<body>
+	<center>
+	<div class="tren">
+		<img src="happy.jpg" alt="happy">
+		<h1>Happy Mood</h1>
+	</div>
+	</center>
+	<div class="giua">
+		<div class="gach"></div>
+		<h1>Front-end Course</h1>
+		<ul>
+			<li>HTML <a href="">(Link)</a></li>
+			<li>CSS <a href="">(Link)</a></li>
+			<li>Javascipt <a href="">(Link)</a></li>
+			<li>PHP<a href="">(Link)</a></li>
+		</ul>
+		<h1>My Hobbies</h1>
+		<ul>
+			<li>Games</li>
+			<li>Football</li>
+			<li>Music</li>
+			<li>Books</li>
+		</ul>
+		<h1>My Courses</h1>
+		<table>
+			<tr>
+				<th>Course number</th>
+				<th>Course title</th>
+				<th>Semester taken</th>
+			</tr>
+			<tr>
+				<th colspan="3">For credit</th>
+			</tr>
+			<tr>
+				<td>6.1223</td>
+				<td>Operating System</td>
+				<td>Spring 19</td>
+			</tr><tr>
+				<td>5.9480</td>
+				<td>Artifical Intelligence</td>
+				<td>Fall 19</td>
+			</tr>
+			<tr>
+				<td>7.0879</td>
+				<td>Data Mining</td>
+				<td>Fall 19</td>
+			</tr>
+			<tr>
+				<th colspan="3">For credit</th>
+			</tr>
+			<tr>
+				<td>8.0383</td>
+				<td>Database</td>
+				<td>Fall 19</td>
+			</tr>
+			<tr>
+				<td>6.0393</td>
+				<td>Java programming</td>
+				<td>Spring 19</td>
+			</tr>
+		</table>
+	<h1>Submit Information</h1>
+	<table>
+		<tr id="one">
+			<td> <label for="fullname">Fullname</label></td>
+			<td></td>
+			<td> <input type="text" id="fullname"></td>
+		</tr>
+		<tr id="one">
+			<td> <label >Gender</label></td>
+			<td></td>
+			<td>
+				<label for="male">Male</label>
+				<input type="radio" id="male" name="gender">
+				<label for="female">Female</label>
+				<input type="radio" id="female" name="gender"><br>
+				
+			</td>
+		</tr>
+		</tr>
+		<tr id="one">	
+			<td> <label>Hobbies</label></td>
+			<td></td>
+			<td><label for="music">Music</label>
+				<input type="checkbox" id="music">
+				<label for="game">Games</label>
+				<input type="checkbox" id="game">
+				<label for="movie">Movies</label>
+				<input type="checkbox" id="movie">
+			</td>
+		</tr>
+		<tr id="one">
+			
+				<td>Date of birth</td>
+				<td></td>
+				<td> <input type="Date"></td>
+		</tr>
+		<tr id="one">
+			<td>Country</td>
+			<td></td>
+			<td> 
+				<select name="" id="">
+					<option value="1">VietNam</option>
+					<option value="2">China</option>
+					<option value="3">Japan</option>
+				</select>
+			</td>
+		</tr>
+		<tr id="one">
+			<td>Picture</td>
+			<td></td>
+			<td>
+				<input type="file">
+			</td>
+		</tr>
+		<tr id="one">
+			<td>Email</td>
+			<td></td>
+			<td>
+				<input type="Email">
+			</td>
+		</tr>	
+		<tr id="one">
+			<td>Password</td>
+			<td></td>
+			<td>
+				<input type="Password">
+			</td>
+		</tr>
+		<tr id="one">
+			<td>Favourite Words</td>
+			<td></td>
+			<td>
+				<textarea name="" id="" cols="30" rows="4"></textarea>
+			</td>
+		</tr>
+		<tr id="one">
+			<td></td>
+			<td></td>
+			<td><input type="Submit">   <input type="reset"></td>
+			
+		</tr>
+	</table>
+	<a href="HappyMood.html">Back</a>
+	</div>
+</body>
+</html>

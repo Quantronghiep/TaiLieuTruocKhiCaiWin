@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>From</title>
+</head>
+<body>
+	<!-- TEXT INPUT  -->	
+<form>
+	<h1>Text Input</h1>
+  <label for="fname">First name: </label><br>
+  <input type="text" id="fname"  placeholder="Nhap ten">
+  <br><br>
+  <label for="lname">Last name: </label>
+  <br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+  <p>Note that the form itself is not visible.</p>
+  <p>Also note that the default width of a text input field is 20 characters.</p>
+</form>
+	<!-- TEXT AREA -->
+	<h1>Textarea</h1>
+	<p>The textarea element defines a multi-line input field.</p>
+	<form>
+	<!-- <label for="w3review">Review of W3Schools:</label> -->
+	<textarea id="w3review" name="w3review" rows="4" cols="50">
+  At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+  </textarea>
+  <br><br>
+  <!-- <input type="submit" value="Submit"> -->
+</form>
+	<!-- Password Field -->
+	<h1>Password field</h1>
+	<p>The input type="password" defines a password field:</p>
+<form >
+	<label for="name">User name:</label><br>
+	<input type="text" id="name"><br>
+	<label for="password">User password:</label><br>
+	<input type="password" id="password">
+	<p>The characters in a password field are masked (shown as asterisks or circles).</p>
+</form>
+	<!-- The Submit-Reset Button -->
+	<h1>The Submit-Reset Button</h1>
+<form action="/action_page.php" method="get">
+	  <label for="f1name">First name:</label>
+	  <input type="text" id="f1name" name="f1name" ><br><br>
+	  <label for="l1name">Last name:</label>
+	  <input type="text" id="l1name" name="l1name"><br><br>
+	  <!-- <button type="submit" value="Submit">Submit</button> -->
+	  <input type="Submit">
+	  <button type="reset" value="Reset">Reset</button>
+</form>
+	<!-- The Radio Buttons And Checkbox Buttons -->
+	<h1>The Radio Buttons And Checkbox Buttons</h1>
+	<p>Please select your gender:</p>
+<form action="">
+		<input type="radio" name = "gender" id = "id1" checked="">
+		<label for="id1">Male</label>
+		<br>
+		<input type="radio" name = "gender" id = "id2">
+		<label for="id2">Female</label><br>
+		<input type="radio" name = "gender" id = "id3">
+		<label for="id3">Gay</label>
+<!-- </form> -->
+	
+<!-- <form action=""> -->
+		<p>Please select your vehicle:</p>
+		<input type="Checkbox" name = "vehicle" id = "v1">
+		<label for="v1">Car</label>
+		<br>
+		<input type="Checkbox" name = "vehicle" id = "v2">
+		<label for="v2">Bike</label><br>
+		<input type="Checkbox" name = "vehicle" id = "v3">
+		<label for="v3">Motorbike</label>
+		<br><br>
+		<input type="Submit" value="Submit">
+</form>
+	<!-- The Drop-down menu -->
+	<h1>The Drop-down menu</h1>
+	<select name="" id="" multiple="">
+		<option value="1">Hihi</option>
+		<option value="2">Haha</option>
+		<option value="3">Huhu</option>
+	</select>
+	<!-- The Drop-down menu with option group -->
+	<h1>The Drop-down menu with option group</h1>
+	<select name="" id="">
+		<optgroup label="Smile">
+			<option value="Hihi">Hihi</option>
+			<option value="Haha">Haha</option>
+		</optgroup>
+		<optgroup label="Vehicle">
+			<option value="Bike">Bike</option>
+			<option value="Car">Car</option>
+		</optgroup>
+	</select>
+	<h1>Show File-select Fields</h1>
+	<!-- Show a file-select field -->
+	<form action="/action_page.php">
+	  <label for="myfile">Select a file:</label><br>
+	  <input type="file" id="myfile"><br><br>
+	  <input type="submit">
+	</form>
+
+	<h3>Show a file-select field which allows multiple files:</h3>
+	<form action="/action_page.php">
+	  <label for="myfile">Select multiple files:</label><br>
+	  <input type="file" id="myfile" name="myfile" multiple><br><br>
+	  <input type="submit">
+	</form>
+
+	<h1>Define a hidden input field:</h1>
+	<form action="/action_page.php">
+		First name: 
+		<input type="text" name="fname"><br>
+		<input type="hidden" id="custId" name="custId" value="3487">
+		<!-- Truong an nhung khi gui du lieu van se duwoc gui -->
+		<br>
+		<input type="submit"value="Submit">
+	</form>
+</body>
+</html>
+

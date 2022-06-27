@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function modify(names){
+			names[0]="Trong Hiep";
+			names[1]="Ga";
+		}
+		function initialize(){
+			var names=new Array("Haha" , "Hihi","Huhu");
+			document.write("Before invoking method:<br>");
+			for(var i=0 ; i<names.length;i++)
+				document.write(names[i] + " - ");
+			modify(names);    //Invoking method
+			document.write("<Br>After invoking method:<br>");
+			for(var i=0;i<names.length;i++)
+				document.write(names[i] +" - ");
+		}
+	</script>
+</head>
+<body onLoad="initialize()">
+	<p>Calling function by reference</p>
+	<h1>hahahaha</h1>
+</body>
+</html>

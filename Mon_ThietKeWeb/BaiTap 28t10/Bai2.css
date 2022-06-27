@@ -1,0 +1,37 @@
+.container{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.phandau{
+	background: lightgreen;
+}
+.phangiua{
+	height: 300px ;
+}
+.phantrai{
+	width: 20%;
+	height: 300px;
+	background: gray;
+	float: left;
+}
+.phantrong{
+	height: 300px;
+	width: 60%;
+	float: left;
+	background: lightgray;
+}
+.phanphai{
+	width: 20%;
+	height: 300px;
+	float:left;
+	background: gray;
+}
+.phanduoi{
+	background: lightgreen;
+	/*width: 100%;*/
+	margin-top: 10px;
+	height: 100px;
+	text-align: center;
+}
+

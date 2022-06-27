@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<script src="form.js"></script>
+	<link rel="stylesheet" href="form.css">
+	<!-- <script src="form.js"></script> -->
+</head>
+<body>
+	<form action="">
+		<table>
+			<tr>
+				<td><label for="user">User Id :</label></td>
+				<td><input id="user" style="width: 80px" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Password :</label></td>
+				<td><input id="pass" style="width: 80px" type="password"></td>
+			</tr>
+			<tr>
+				<td><label for="name">Name :</label></td>
+				<td><input id="name" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="address">Address :</label></td>
+				<td><input id="address" type="text"></td>
+			</tr>
+			<tr>
+				<td><label >Country :</label></td>
+				<td>
+					<select name="" id="country">
+						<option value="">(Please select a country)</option>
+						<option  value="1">Viet Nam</option>
+						<option  value="2">Lao</option>
+						<option  value="3">USA</option>
+					</select> 
+				</td>
+			</tr>
+			<tr>
+				<td><label for="zip">ZIP Code :</label></td>
+				<td><input id="zip" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="email">Email :</label></td>
+				<td><input id="email" type="text"></td>
+			</tr>
+			<tr>
+				<td><label for="Sex">Sex</label></td>
+				<td>
+					<input id="male" type="radio" name="sex">
+					<label for="male">Male</label>
+					<input id="female" type="radio" name="sex">
+					<label for="female">Female</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="languge">Language</label></td>
+				<td>
+					<input type="checkbox" id="Eng" name="E">
+					<label for="Eng">Eng</label>
+					<input type="checkbox" id="NoEng" name="E">
+					<label for="NoEng">Non Eng</label> 
+				</td>
+			</tr>
+			<tr></tr>
+		</table>
+
+	</form>
+	
+	<button onclick="validateData()">Submit</button>
+
+</body>
+</html>

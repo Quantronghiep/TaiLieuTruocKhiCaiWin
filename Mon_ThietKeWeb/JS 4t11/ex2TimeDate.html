@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function myFunction(){
+			var text ;
+			var x = new Date().getHours();
+			if(x<10)
+				text = "Good morning"
+			else{
+				if(x<20)
+					text = "Good day";
+				else
+					text = "Good night";
+			}
+			document.getElementById("hour").innerHTML = x ;
+			document.getElementById("demo").innerHTML = text ;
+		}
+	</script>
+</head>
+<body>
+	<p>Click here</p>
+	<button onclick="myFunction()">Try it</button>
+	<p id="hour"></p>
+	<p id="demo"></p>
+</body>
+</html>

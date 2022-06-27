@@ -1,0 +1,33 @@
+
+div{
+			background-color: lightgrey ;
+			width: 300px;
+			border:15px solid green;
+			padding: 50px ;
+			margin: 20px;
+		}
+blockquote{
+			padding-top: 1em;
+			padding-right: 3em;
+			padding-bottom: 1em;
+			padding-left: 3em;
+			background-color: violet ;
+		}
+p#A{
+			margin: 4em;
+			border: 1px solid red ;
+			background-color: yellow ;
+		}
+p#B{
+			margin-top: 2em;
+			margin-right: 250px ;
+			margin-bottom: 1em;
+			margin-left: 4em ;
+			border: 1px solid blue ;
+			background-color: lightblue ;	
+}
+body{
+	margin: 0 15%;
+	border: 1px solid blue;
+	background-color: lightblue;
+}

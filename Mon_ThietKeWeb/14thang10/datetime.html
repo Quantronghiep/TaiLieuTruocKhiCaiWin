@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The elements used to create a from</title>
+</head>
+<body>
+	<h1>Show a date control:</h1>
+	<form action="/action_page.php">
+		<label for="ctrdate">Birthday:</label>
+		<input type="date" name="bday" id="ctrdate">
+		<input type="submit"></form>
+    <br>
+    <h1>Show a time control:</h1>
+    <form action="/action_page.php">
+    	Select a time: <input type="time" name="usr_time">
+    	<input type="submit">
+    </form>
+    <br>
+    <h1>Show a date and time control:</h1>
+    <form action="/action_page.php">
+    	Birthday (date and time): <input type="datetime-local" name="bdaytime">
+    	<input type="submit">
+    </form>
+    <br>
+    <h1>Show a month control:</h1>
+    <p>Depending on browser support:<br>A date picker can pop-up when you enter the input field.</p>
+    <form action="/action_page.php">
+    	Birthday (month and year):
+    	<input type="month" name="bdaymonth"> 
+    	<input type="submit">
+    </form><br>
+    <h1>Show a week control:</h1>
+    <p>Depending on browser support:<br>
+    A date picker can pop-up when you enter the input field.</p>
+    <form action="/action_page.php">
+    	Select a week: 
+    	<input type="week" name="year_week"> 
+    	<input type="submit">
+    </form><br>
+    
+    <h1>Show numerical inputs:</h1>
+    <form action="/action_page.php">
+    	Quantity (between 1 and 5): 
+    	<input type="number" name="quantity" min="1" max="5">
+    	<input type="submit">
+    	<br> 
+    	Points: 
+    	<input type="range" name="points" min="0" max="10">
+    	<input type="submit">
+    </form><br>
+    <h1>Show a color picker:</h1>
+    <form action="/action_page.php">
+    	Select your favorite color:
+    	<input type="color" name="favcolor" value="#ff0000"><br><br>
+    	<input type="submit"> 
+    </form>
+</body>
+</html>

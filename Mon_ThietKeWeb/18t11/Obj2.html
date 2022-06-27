@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Obj example</title>
+	<script type="text/javascript">
+		function doctors(name , age , salary){
+			this.name = name ;
+			this.age = age ;
+			this.salary = salary;
+		}
+		function display(){
+			var doc = new doctors("Hiep",19,6868);
+			document.write("Doctor " + doc.name + " Age " + doc.age + "  Salary " + doc.salary)
+		}
+	</script>
+</head>
+<body onload="display()">
+	
+</body>
+</html>

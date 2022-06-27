@@ -1,0 +1,91 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.dau{
+	height: 80px;
+	line-height: 80px;
+	background-color: #53DCE8;
+}
+.logo{
+	color: white;
+	float: left;
+	margin-left: 15px;
+}
+.home{
+	float: right;
+}
+.home a{
+	text-decoration: none;
+	margin-right: 15px;
+	color: white;
+}
+.home a:hover{
+	font-size: 25px;
+}
+.giua{
+	height: auto;
+	margin-top: 5px;
+}
+.left{
+	width: 25%;
+	float: left;
+	/*padding-left: 10px;*/
+}
+.mot{
+	background-color: #6DC2F3;
+	color: white;
+	margin-top: 5px;
+	padding:5px;
+}
+.mot:hover{
+	color: pink;
+}
+.mid{
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+.mid p{
+	margin-top: 5px;
+}
+.form{
+	margin-top: 5px;
+}
+#title-td{
+	float: right;
+}
+#submit{
+	background-color: #30DDCF;
+	margin-top: 5px;
+	float: right;
+}
+.right {
+	float:left;
+	width: 25%;
+	background-color:#005aff8c;
+	text-align: center;
+	color:#fff;
+	padding:20px 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.right p {
+	margin:20px 0px;
+}
+.cuoi{
+	clear: both;
+	background-color: #005aff8c;
+	text-align: center;
+	height: 80px;
+	line-height: 80px;
+	/*overflow: hidden;*/
+
+}
+@media screen and (max-width: 600px){
+	.left , .mid , .right{
+		float: none!important;
+		width: 100%!important;
+	}
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<input id="st1" type="text">
+	<input id="st2" type="text">
+	<button onclick="hello()">HELLO</button>
+	<script>
+		function hello(){
+			let st1 = document.getElementById('st1');
+			let st2 = document.getElementById('st2');
+			if (st1.value === '' && st2.value === '') {
+				alert('Nhap vao di');
+			}
+			if(st1.value === 'admin' && st2.value ==='123456'){
+				alert('Dang nhap thanh cong');
+				st1.value ='';
+				st2.value ='';
+			}
+			
+		}
+	</script>
+</body>
+</html>

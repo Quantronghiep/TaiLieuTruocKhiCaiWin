@@ -1,0 +1,110 @@
+/**{
+	box-sizing: border-box;
+}*/
+body{
+	margin: 0 ;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background: lightgray;
+	text-align: center;
+}
+.giua1{
+	width: 100%;
+	height: auto;
+	background: black;
+	margin-top: 5px;
+	overflow: hidden;
+}
+.giua1 a{
+	float: left;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: inline-block;
+}
+.giua1 a:hover {
+	background: red;
+	color: black;
+}
+.active{
+	background-color: green;
+}	
+.column{
+	padding: 10px;
+}
+.giua2{
+	margin-top: 5px;
+	width: 100%;
+	height: 500px;
+	background: lightgray;
+
+}
+/*.giua2:after {    
+	content: "";    
+	display: table;    
+	clear: both;
+}
+*/.trai{
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+.giua{
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+.phai{
+	height: 100%;
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+.cuoi{
+	margin-top: 5px;
+	width: 100%;
+	background: red;
+	height: 100px;
+	/*clear: left;*/
+}
+@media screen and (min-width: 400px){ /* >= */
+	body{
+		background: lightgreen;
+	}
+	.trai , .giua, .phai{
+		height: auto;
+		width: auto;
+	}
+}
+@media screen and (min-width: 800px){
+	body{
+		background: lightblue;
+	}
+	.trai , .giua, .phai{
+		height: auto;
+		width: auto;
+	}
+}
+@media screen and (max-width: 600px){
+	.giua1 a{
+		float: none;
+		width: 100%;
+		/*display: block;*/
+		height: auto;
+		padding: 0;
+	}
+	.giua2{
+		height: auto;
+	}
+	.trai , .giua, .phai{
+		float: none;
+		height: auto;
+		width: auto;
+	}
+	.cuoi{
+		background: pink;
+		text-align: center;
+	}
+}

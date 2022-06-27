@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position</title>
+	<style>
+		.parent{
+			border: 2px black dotted;
+			display: inline-block;
+			position: relative;
+		}
+		.box{
+			display: inline-block;
+			background: red;
+			width: 100px;
+			height: 100px;
+		}
+		#stwo{
+			background: green;
+			top: 20px;
+			left: 20px;
+			position: static;
+		}
+		#rtwo{
+			background: green;
+			top: 20px;
+			left: 20px;
+			position: relative;
+		}
+		#atwo{
+			background: green;
+			top: 20px;
+			left: 20px;
+			position: absolute;
+		}
+		#ftwo{
+			background: green;
+			top: 20px;
+			left: 20px;
+			position: fixed;
+		}
+	</style>
+</head>
+<body>
+	<h1>Static</h1>
+	<div class="parent">
+		<div class="box">One</div>
+		<div class="box" id="stwo">Hais</div>
+		<div class="box">Three</div>
+		<div class="box">Four</div>
+	</div>
+	<h1>RELATIVE</h1>
+	<div class="parent">
+		<div class="box">One</div>
+		<div class="box" id="rtwo">Two</div>
+		<div class="box">Three</div>
+		<div class="box">Four</div>
+	</div>
+	<h1>Absolute</h1>
+	<div class="parent">
+		<div class="box">One</div>
+		<div class="box" id="atwo">Two</div>
+		<div class="box">Three</div>
+		<div class="box">Four</div>
+	</div>
+	<h1>Fixed</h1>
+	<div class="parent">
+		<div class="box">One</div>
+		<div class="box" id="ftwo">Haif</div>
+		<div class="box">Three</div>
+		<div class="box">Four</div>
+	</div>
+</body>
+</html>

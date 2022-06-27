@@ -1,0 +1,43 @@
+button{
+	margin-left: 35%;
+}
+#user{
+	width: 100px;
+	height: 20px;
+
+}#pass{
+	width: 100px;
+	height: 20px;
+
+}
+#name{
+	width: 300px;
+	height: 20px;
+
+}
+#adress{
+	width: 300px;
+	height: 20px;
+
+}
+#country{
+	/*width: 300px;*/
+	height: 30px;
+
+}#zip{
+	width: 100px;
+	height: 20px;
+
+}	
+#email{
+	width: 300px;
+	height: 20px;
+
+}#about{
+	width: 300px;
+	height: 150px;
+
+}
+span{
+	color: red;
+}

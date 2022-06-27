@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		.box{
+			width: 50%;
+			float: left;
+			padding: 50px;
+			height: 300px;
+		}
+		/*.clear::after{
+			content: "";
+			clear: both;
+			display: table;
+		}*/
+	</style>
+</head>
+<body>
+	<h2>Equal Height Boxes</h2>
+	<p>Floating boxes with equal heights:</p>
+	<div class="clear">
+		<div class="box" style="background-color: red">
+			<h2>Box1</h2>
+			<p>hahaha</p>
+		</div>
+		<div class="box" style="background-color: blue">
+			<h2>Box2</h2>
+			<p>hihihi</p>
+			<p>huhuhu</p>
+		</div>
+	</div>
+</body>
+</html>

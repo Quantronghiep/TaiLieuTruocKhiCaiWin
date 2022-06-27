@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Display</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background: red;
+			display: block;
+		}
+		.ibox{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			display: inline;
+		}
+		.ilbox{
+			width: 100px;
+			height: 100px;
+			background: yellow;
+			display: inline-block;
+		}
+		#mot{
+			display: none ;
+			background: green;
+			top: 20px;
+			left: 20px;
+		}
+		#hai{
+			visibility: hidden;
+			background: red;
+			top: 20px;
+			left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Display : block</h1>
+	<div class="box">One</div>
+	<div class="box">Two</div>
+	<div class="box">Three</div>
+	<div class="box">Four</div>
+
+	<h1>Display : inline</h1>
+	<div class="ibox">One</div>
+	<div class="ibox">Two</div>
+	<div class="ibox">Three</div>
+	<div class="ibox">Four</div>
+
+	<h1>Display : inline-block</h1>
+	<div class="ilbox">One</div>
+	<div class="ilbox">Two</div>
+	<div class="ilbox">Three</div>
+	<div class="ilbox">Four</div>
+
+	<h1>Display : none</h1>
+	<div class="ilbox">One</div>
+	<div class="ilbox" id="mot">Two</div>
+	<div class="ilbox">Three</div>
+	<div class="ilbox">Four</div>
+
+	<h1>Visbility : Hidden</h1>
+	<div class="ilbox">One</div>
+	<div class="ilbox" id="hai">Two</div>
+	<div class="ilbox">Three</div>
+	<div class="ilbox">Four</div>
+</body>
+</html>

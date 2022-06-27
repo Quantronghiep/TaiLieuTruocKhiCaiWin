@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<script>
+		class sinhVien{
+			constructor(stt,hoTen,lop){
+				this.stt = stt ;
+				this.hoTen = hoTen;
+				this.lop=lop;
+			}
+		}
+		let str = "" ;
+		let sv1 = new sinhVien(1 , "Hiep" , "IT3");
+		let sv2 = new sinhVien(2 , "Hang" , "IT4");
+		let sv3 = new sinhVien(3 , "Hihi" , "IT5");
+		let arrSV = [sv1,sv2,sv3];
+		for(i =0 ; i< arrSV.length ; i++){
+			str += "<h1>"+arrSV[i].hoTen+"</h1>";
+		}
+		document.write(str);	
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Array 2 chieu</title>
+	<script>
+		var emp = new Array(3);
+		emp[0] = new Array("Hiep",'7777');
+		emp[1] = new Array("Haha",'8888');
+		emp[2] = new Array("Hihi",'9999');
+		document.write('<table border=1> <tr> <th>Name</th><th>Lasary</th></tr>');
+		for(var i = 0 ; i< emp.length ; i++){
+			document.write('<tr>')
+			for(var j = 0 ; j< emp[i].length ; j++)
+				document.write('<td>' + emp[i][j] +'</td>');
+			document.write('</tr>')
+		}
+		document.write('</table>')
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

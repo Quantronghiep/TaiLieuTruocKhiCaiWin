@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Example of table</title>
+	<style>
+		
+		table , th, td {
+				padding: 5px;      
+				border: 1px solid black;
+				border-collapse: collapse;
+				}
+			th {
+				text-align: center;
+				}
+	</style>
+</head>
+<body>
+	<!--Example of table-->
+	<h2>Table</h2>
+	<table >
+		<tr>
+			<th>Menu item</th>
+			<th>Calories</th>
+			<th>Fat (g)</th>
+		</tr>
+		<tr>
+			<td>Chicken noodle soup</td>
+			<td>120</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>Ceasar salad</td>
+			<td>400</td>
+			<td>26</td>
+		</tr>
+	</table>
+	<!--Example of column spans-->
+	<h2>Column spans</h2>
+	<table>
+		<tr>
+			<th colspan="2">Fat</th>
+		</tr>
+		<tr>
+			<td>Saturated Fat(g)</td>
+			<td>Unsaturated Fat(g)</td>
+		</tr>
+	</table>
+	<!--Example of row spans-->
+	<h2>Row spans</h2>
+	<table>
+		<tr>
+			<th rowspan="3">Serving size</th>
+			<td>Small (80z.)</td>
+		</tr>
+		<tr>
+			<td>Medium (160z.)</td>
+		</tr>
+		<tr>
+			<td>Large (240z.)</td>
+		</tr>
+	</table>
+</body>
+</html>

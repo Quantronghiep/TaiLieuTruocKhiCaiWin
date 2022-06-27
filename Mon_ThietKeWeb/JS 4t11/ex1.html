@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		function myFunction(){
+			var x= document.getElementById("numb").value;
+			var y=document.getElementById("demo")
+			if(x <=10 && x >0){
+				y.innerText="thanh cong";
+			}else {
+				y.innerHTML="That bai";
+			}
+			console.log(x)
+		}
+		// function myFunction(){
+		// 	var x= document.getElementById("numb").value;
+		// 	if(x<=10 && x>0)
+		// 		text = "Thanh cong";
+		// 	else
+		// 		text = "That bai";
+		// 	document.getElementById("demo").innerText = text ;
+		// 	 // alert(text);
+		// }
+		
+	</script>
+</head>
+<body>
+	<p>Please input a number between 1 and 10</p>
+	<input id="numb" type="text">
+	<button onclick="myFunction()">Submit</button>
+	<p id="demo"></p>
+</body>
+</html>
