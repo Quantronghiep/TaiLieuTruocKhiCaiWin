@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xử lí cọng 2 số trong form</title>
+</head>
+<body>
+    <form action="" method="post" id="form">
+        Nhap so thu nhat :
+        <input type="text" id="number1">
+        <br>
+        Nhap so thu hai:
+    	<input type="text" id="number2" value="" />
+    	<br />
+    	<input type="submit" value="Add" />
+        <input type="reset" value="Reset form">
+    </form>
+    <h3 style="color: red;" id="error"></h3>
+    <h3 style="color:green;" id="result"></h3>
+    <script>
+        // Xử lí form : cộng hai số và in kq ra màn hình
+        // Ap dụng sự kiện submit cho form , có thể sd sự kiện click vào nút submit
+        var obj_form = document.getElementById('form');
+        obj_form.addEventListener('submit',function(){
+            //alert('Submit')
+            var error = " ";
+            var result = " ";
+
+            var obj_number1 = document.getElementById('number1');
+            var number1 = obj_number1.value ;
+            var obj_number2 = document.getElementById('number2');
+            var number2 = obj_number2.value ;
+            //Buộc phải nhập , là số , có 2 kí tự trở lên
+            // + Phải nhập số: isNaN : is not a number
+            if (number1 == '') {
+			error = 'Phải nhập số thứ nhất';
+            // Focus chuột vào input lỗi luôn , dùng trên đối tượng 
+			obj_number1.focus();
+		    } else if (number2 == '') {
+			error = 'Phải nhập số thứ hai';  
+            obj_number2.focus();
+		    } else if (isNaN(number1) || isNaN(number2)) {
+			error = 'Phải nhập số';
+		    } else if (number1.length < 2 || number2.length < 2){
+                error = " Phải nhập số từ 2  kí tự trở lên";
+            }
+            if(error == " "){
+            // Do giá trị lấy từ input form luôn là kiểu string, nên phép cộng sẽ thành  phép nối chuỗi,
+            // cần ép kiểu về number thì mới cộng đc 2 số -> parseInt
+			// number1 = parseInt(number1);
+			// number2 = parseInt(number2);
+            var sum = number1 + number2;
+             result = "Tổng 2 số là: " + sum;
+            }
+            document.getElementById('error').innerHTML = error;
+            document.getElementById('result').innerHTML = result;
+            event.preventDefault();
+        })
+    </script>
+</body>
+</html>

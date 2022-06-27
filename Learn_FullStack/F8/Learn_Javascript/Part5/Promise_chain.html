@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var promise = new Promise(
+            //Executor
+            function(resolve,reject){
+                resolve("Thanh cong");
+            }
+        )
+
+        promise
+            // NẾU then 1 ko return promise hoặc ko return cái gì thì sẽ chạy ngay then sau đó 
+            .then(function(){
+                return new Promise(function(resolve){
+                    setTimeout(function(){
+                        resolve([1,2,3])
+                    },3000);
+                })
+            })
+            // .then này chính là .then trên Promise mà then phía trên return 
+            .then(function(success){
+                console.log(success)
+            })
+            //Khi that bai ,tu choi  
+            .catch(function(){
+
+            })
+            //Thanh cong hay that bai deu lot vao day
+            .finally(function(){
+                console.log("Done!")
+            })
+
+            // function sleep(ms){
+            //     return new Promise((resolve)=>{
+            //         setTimeout(resolve,ms)
+            //     })
+            return new Promise((resolve)=>{
+                    setTimeout(resolve((1)),ms)
+                })
+            // }
+
+            // sleep(1000)
+            //     .then(()=>{
+            //         console.log(1);
+            //         return sleep(1000)
+            //     })
+            //     .then(()=>{
+            //         console.log(2);
+            //         return sleep(1000)
+            //     })
+            //     .then(()=>{
+            //         console.log(3);
+                   
+            //     })
+    </script>
+</body>
+</html>

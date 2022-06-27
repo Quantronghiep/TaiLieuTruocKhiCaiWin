@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style type="text/css">
+		/*selector theo cap*/
+		#div-id p{
+			background-color: lightblue;
+		}
+		/*selector theo thuoc tinh the*/
+		input[type=text]{
+			background: red;
+		}
+		input[type=number]{
+			background: green;
+		}
+		#h3-test:hover{
+			color:green;
+		}
+		ul li:first-child{
+			background-color: pink;
+		}
+		ul li:last-child{
+			background-color: yellow;
+		}
+		ul li:nth-child(3){
+			background: #D19B33;
+		}
+		h1::first-letter{
+			font-size: 50px;  /*Chu cai dau */
+		}
+		h1::first-line{
+			color: red;  /* Dong dau*/
+		}
+		h1::selection{
+			background-color: pink; /*Khi boi den */
+		}
+		.b-class:before{
+			content: "Phia truoc";	
+		}
+		.b-class:after{
+			content: "Phia sau";	
+		}
+	</style>
+	<h1>Quan Trong Hiep <br> Ha Nam</h1>
+	<b class="b-class">The b</b>
+	<ul>
+		<li>The li 1</li>
+		<li>The li 2</li>
+		<li>The li 3</li>
+		<li>The li 4</li>
+		<li>The li 5</li>
+	</ul>
+	<h3 id="h3-test">The h3</h3>
+	<form action="" method="post">
+		<input type="text" placeholder="Nhap ten vao">	<br>
+		<input type="number" value="5">
+	</form>
+
+	<div id="div-id">
+		<p>The p1 con</p>
+		<p>The p2 con</p>
+		<p>The p3 con</p>
+	</div>
+</body>
+</html>

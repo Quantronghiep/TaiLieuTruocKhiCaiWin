@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 onclick="console.log(this)">Ther H1 click</h1>
+    <h1>Vào đây nghe nhạc nào!</h1>
+
+    <audio src="./NangAmXaDanLofiVersion-SonTungMTP-6995462_hq.mp3" controls autoplay>
+    </audio>
+
+    <button>
+        Click to start
+    </button>
+
+    <script>
+        var btnElement = document.querySelector('button');
+        btnElement.onclick = function(e){
+            document.querySelector('audio').setAttribute('autoplay','')
+            console.log('ok')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <input type="checkbox">
+    <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <script>
+        //Input / Select
+        var inputTextElement = document.querySelector('input[type="text"]');
+        inputTextElement.onchange = function(e){ //oninput
+             console.log(e); // this = e.target  // trả về thẻ đó
+            // console.log(e.target.value)
+        }
+
+        var inputCheckElement = document.querySelector('input[type="checkbox"]');
+        inputCheckElement.onchange = function(e){ 
+            console.log(e.target.checked)
+        }
+
+        var selectElement = document.querySelector('select');
+        selectElement.onchange = function(e){ 
+            console.log(e.target.value)
+        }
+        //Key up / down
+        // inputTextElement.onkeyup = function(e){  // di' xuong
+        //     // console.log(e.target.value)
+        //     console.log(e.which) // gia tri cua phim
+        // }
+        //onkeypress : khi giữ chạy nhiều
+        document.onkeydown = function(e){ //nhan xuong xong nhac len moi duoc
+            // console.log(e.keyCode); // which = keyCode
+            switch(e.which){
+                case 27:
+                    console.log('Exit');
+                    break;
+                case 13:
+                    console.log('Send mess');
+                    break;    
+            }
+        }
+    </script>
+</body>
+</html>

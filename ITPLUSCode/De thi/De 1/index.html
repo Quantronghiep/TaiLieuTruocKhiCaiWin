@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thi 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">LOGO AREA</div>
+            <div class="home">
+                <div class="banner">BANNER AREA</div>
+                <div class="menu">
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Đăng kí</li>
+                        <li>Hướng dẫn</li>
+                        <li>Giới thiệu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="travel">
+                <ul>
+                    <li>Du lịch Hạ Long</li>
+                    <li>Du lịch Sapa</li>
+                    <li>Du lịch Đà Lạt</li>
+                </ul>
+            </div>
+            <div class="registration">
+                <div class="title">
+                    <h1>Đăng ký Tour du lịch</h1>
+                </div>
+                <div class="form">
+                    <form action="" id="form-id">
+                        <table>
+                            <tr>
+                                <td ><label for="name">Họ tên(*)</label></td>
+                                
+                                <td> 
+                                    <input type="text" id="name" >
+							        <span id="inName"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td ><label for="gender">Giới tính(*)</label></td>
+                                
+                                <td>
+                                    <label for="man">Nam     </label>
+                                    <input type="radio" id="man"  name="gender">
+                                    <label for="girl">Nữ</label>
+                                    <input type="radio" id="girl" name="gender">
+                                    <span id="inGioiTinh"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td ><label for="address">Địa chỉ(*)</label></td>
+                                
+                                <td ><input type="text" id="address"></td>
+                            </tr>
+                            <tr>
+                                <td ><label for="email">Email(*)</label></td>
+                                
+                                <td ><input type="text" id="email">
+                                    <span id="inEmail"></span>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td ><label for="tour">Chọn Tour</label></td>
+                                
+                                <td >
+                                    <label for="HL">Hạ Long</label>
+                                    <input type="checkbox" id="HL">
+                                    <label for="SP">Sapa</label>
+                                    <input type="checkbox" id="SP">
+                                    <label for="dl">Đà Lạt</label>
+                                    <input type="checkbox" id="DL">
+                                    <span id="inTour"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="phuongtien">Phương tiện</label></td>
+                                
+                                <td >
+                                    <select name="" id="xe" >
+                                        <option value="">Chọn phương tiện</option>
+                                        <option value="1">Ô tô</option>
+                                        <option value="2">Tàu hỏa</option>
+                                        <option value="3">Máy bay</option>
+                                    </select>
+                                    <span id="inXe"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Thông tin khác</label></td>
+                                
+                                <td ><textarea name=""   cols="30" rows="10"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <!-- <td></td> -->
+                                <!-- <td></td> -->
+                                <td ><input type="submit" value="Đăng nhập" onclick="dangNhap()" >     
+                                    <input type="reset" value="Nhập lại" id="reset" onclick="resetForm()">
+                                </td>
+               
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+</html>

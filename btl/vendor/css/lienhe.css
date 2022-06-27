@@ -1,0 +1,117 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+ul li {
+	list-style-type: none;
+}
+#contact{
+	margin-bottom: 50px;
+}
+.style h2 {
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+	margin: 0;
+	position: relative;
+	text-transform: uppercase;
+	padding: 10px 0px;
+	/* margin-bottom:15px; */
+}
+.style h2 span  {
+    z-index: 9;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+}
+.style h2::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #e9e9e9;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	bottom: 21px;
+}
+.style h2::after{
+	content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #e9e9e9;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    bottom: 18px;
+}
+input, textarea {
+	padding:0px 8px;
+	width: 100%;
+}
+.title-lienhe ul li{
+	margin-bottom: 15px;
+}
+.lienhe h4{
+	margin-bottom:15px;
+}
+.icon-lienhe{
+	margin-right: 10px;
+	font-size: 20px;
+}
+#button-lienhe{
+	border-radius: 5px;
+	box-shadow: none;
+	border: none;
+	color: #fff;
+	background-color: #f06292;
+	padding: 10px 11px;
+}
+#button-lienhe span{
+	font-size: 14px;
+}
+#button-lienhe:hover {
+	cursor: pointer;
+}
+/* breadcrumb-box css */
+#breadcrumb-box{
+	background-color: #eee;
+    padding: 30px 0;
+    margin: 30px 0;
+}
+.breadcrumb{
+	margin:0px;
+	padding: 0px;
+	background: none!important;
+}
+
+.breadcrumb a, .breadcrumb li:nth-child(2) {
+    color: #464646;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Helvetica", "Arial", "sans-serif";
+}
+.breadcrumb>li+li:before {
+    display: inline-block;
+    content: '/' !important;
+    color: #464646;
+    height: 13px;
+    line-height: 13px;
+    font-size: 14px;
+    margin: 0 7px 0 10px;
+}
+.breadcrumb li:hover a{
+	text-decoration: none;
+	color:#f06292;
+}
+/* breadcrumb-box css */
+/* responsive */
+@media screen and (max-width: 576px){
+    .thongtin form .title {
+		
+	}
+}
+/* end responsive  */

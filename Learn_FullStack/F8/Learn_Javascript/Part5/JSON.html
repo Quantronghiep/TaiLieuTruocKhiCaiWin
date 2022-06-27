@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 'null'
+        var b = '"abc"'
+        var json = '["Java" , "PHP"]';
+        var json2 = '{"name" : "Hiep" , "age" : 20}'
+
+        console.log(JSON.parse(json))
+        console.log(JSON.parse(json2))
+
+        console.log(JSON.stringify(1))  // string
+        console.log(JSON.stringify({
+            name: 'Hiep',
+            age: 20,
+            test: function(){}
+        }))
+    </script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+
+/* add to cart css */
+.add-to-cart {
+    display: none; 
+    position: fixed; 
+    padding-top: 100px;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+}
+.add-dialog{
+    width: 600px;
+    margin: 30px auto;
+}
+.add-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 5px solid rgba(225, 225, 225, .2);
+    border-radius: 5px !important;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .1);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    padding: 15px;
+}
+
+  
+.add-to-cart .img-modal{
+  border: 1px solid #ddd;
+  padding: 1px;
+}
+.add-to-cart .img-modal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-name-modal{
+    font-size: 17px;
+    font-weight: normal;
+}
+.content-modal{
+    margin-left: 0px;
+}
+.text-modal{
+    margin-bottom: 7px;
+}
+.price-modal{
+    color: #f06292;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 6px;
+}
+.price-sale-modal{
+    display: inline;
+    text-decoration: line-through;
+    opacity: 0.5;
+    font-size: 13px;
+}
+.btn-danger{
+    background-color: #f06292!important;
+    border-color: #f06292!important;
+}
+
+/* retweet css */
+.retweet {
+    display: none; 
+    position: fixed; 
+    padding-top: 100px; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+}
+.retweet-dialog{
+    width: 600px;
+    margin: 30px auto;
+}
+/* Modal Content */
+.retweet-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 5px solid rgba(225, 225, 225, .2);
+    border-radius: 5px !important;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .1);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    padding: 15px;
+    background-color: #08800091;
+    color: #fff;
+}
+.retweet-header{
+    display:flex;
+    margin-bottom: 6px;
+}
+.retweet-header i {
+    margin-top: 3px;
+    margin-right: 10px;
+}
+.retweet-header  p {
+    font-size:14px;
+    font-weight: 700;
+    text-shadow:1px 1px 0 #000;
+    margin: 0;
+}
+.retweet-body p {
+    font-size:13px;
+    font-style: italic;
+    margin: 0;
+}
+
+/* showItem  */
+.showItem {
+    display: none;
+    position: fixed; 
+    padding-top: 100px; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+}
+.showItem-dialog{
+    width: 1000px;
+    margin: 30px auto;
+}
+/* Modal Content */
+.showItem-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 5px solid rgba(225, 225, 225, .2);
+    border-radius: 5px !important;
+    outline: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .1);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    padding: 15px;
+}
+#showItem .showItem-img{
+
+padding: 25px;
+}
+#showItem .showItem-img .view-img{
+    text-align: center;
+
+}
+#showItem .showItem-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+#showItem .showItem-img .thub-img p{
+    text-align: center;
+}
+#showItem .showItem-img .thub-img p img{
+    max-width: 85px;
+    height: auto;
+    border: 1px solid #f06292;
+}
+#showItem .title-name-product{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: "Helvetica", "Arial", "sans-serif";
+    color: #636363;
+    margin-bottom: 20px;
+    padding: 0;
+}
+#showItem .id-product{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: flex;  
+}
+#showItem .id-product li{
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 30px;
+}
+#showItem .id-product li:first-child::before{
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 1px;
+    height: 10px;
+    background-color: #ddd;
+    z-index: 100;
+}
+.selection {
+    font-weight:700;
+    margin-left: 10px;
+}
+.price-product-showItem .price-main{
+    font-size: 24px;
+    font-weight: bold;
+    color: #f06292;
+    line-height: 24px;
+}
+.price-product-showItem .discount{
+    background: #f06292;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 14px;
+    line-height: 19px;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+}
+.price-product-showItem .discount::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-right: 14px solid #f06292;
+    position: absolute;
+    top: 0;
+    left: -14px;
+}
+.price-product-showItem .price-sale {
+    display: block;
+}
+.detail-product{
+    margin-top:20px;
+    border-bottom: 1px dashed #ebebeb;
+}
+.detail-product ul {
+    list-style: initial;
+    margin-left: 18px;
+}
+.material-product{
+    padding:20px 0px;
+}
+.material-product label{
+    display: inline;
+    color: #888;
+    font-weight: 400;
+    
+}
+.material-product .author{
+    margin-bottom: 10px;
+}
+.amount input{
+    text-align: center;
+    margin-left:5px;
+}
+.purchase {
+    margin: 20px 0;
+}
+.btn-purchase{
+    height: 40px;
+    font-size: 18px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #afafaf;
+    border-radius: 0;
+    margin:15px 0;
+    padding: 10px 15px;
+    line-height: 40px;
+}
+.btn-purchase:hover{
+    background-color: #f06292;
+    text-decoration: none;
+    color: #fff!important;
+}
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    background-color: #f06292;
+    color: #fff!important;
+    width: 30px;
+    height: 30px;
+    line-height: 28px!important;
+    text-align: center;
+    font-size: 16px!important;
+    opacity: 1!important;
+    z-index: 1;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {bottom:-300px; opacity:0} 
+    to {bottom:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {bottom:-300px; opacity:0}
+    to {bottom:0; opacity:1}
+}
+/* responsive */
+@media screen and (max-width: 576px){
+    #add-to-cart{
+        width:100%;
+        height: auto;
+    }
+    .add-dialog{
+        width:100%;
+        height: auto;
+    }
+    .add-to-cart .img-modal{
+        width: 30%;
+    }
+    .add-to-cart .content-modal{
+        width: 70%;
+    }
+    .retweet-dialog {
+        width: 100%;
+        margin: 30px auto;
+    }
+    .showItem-dialog {
+        width: 100%;
+        margin: 30px auto;
+    }
+}
+@media screen and (max-width: 768px){
+    #add-to-cart{
+        width:100%;
+        height: auto;
+    }
+    .add-dialog{
+        width:100%;
+        height: auto;
+    }
+    .add-to-cart .img-modal{
+        width: 30%;
+    }
+    .add-to-cart .content-modal{
+        width: 70%;
+    }
+    .retweet-dialog {
+        width:500px;
+        margin: 30px auto;
+    }
+    .showItem-dialog {
+        width: 100%;
+        margin: 30px auto;
+    }
+}
+@media screen and (max-width: 992px){
+    #add-to-cart{
+        width:100%;
+        height: auto;
+    }
+    .add-dialog{
+        width:100%;
+        height: auto;
+    }
+    .add-to-cart .img-modal{
+        width: 30%;
+    }
+    .add-to-cart .content-modal{
+        width: 70%;
+    }
+    .retweet-dialog {
+        width: 700px;
+        margin: 30px auto;
+    }
+    .showItem-dialog {
+        max-width:700px;
+        margin: 30px auto;
+    }
+}
+/* end responsive  */

@@ -1,0 +1,109 @@
+/* psd_demo/css/style.css */
+/* Nhúng font từ bên ngoài vào */
+@font-face {
+	font-family: 'Pacifico-Regular';
+	/* Ký tự ../ là lên 1 cấp thư mục */
+	src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+.header {
+    background: #2F2F2F;
+    padding: 15px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    /* Căn đều các cột bên trong trên 1 trục nằm ngang */
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    color: #fff;
+    font-size: 30px;
+    font-family: Pacifico-Regular;
+}
+
+.menu {
+    width: 80%;
+    text-align: right;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+	color: #fff;
+	text-decoration: none;
+    font-family: Myriad Pro;
+}
+
+.main-top {
+    background-color: #EBEDEF;
+    padding: 25px 0 ;
+}
+
+/*Đè CSS có sẵn , nên viết code css đè phía 
+sau , thêm các selector cha phía trc*/
+.main-top .row {
+    align-items: start ;
+}
+
+.learn-more {
+    background-color: #FA9640;
+    border-radius: 3px;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 2px;
+    font-weight: 800;
+    margin-top: 26px;
+    display: inline-block;
+    font-family: Myriad Pro;
+}
+
+.title {
+    margin: 0;
+}
+
+.article {
+    width: 40%;
+    margin-right: 15px;
+}
+
+.image {
+    width: 60%;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.main-center {
+    padding: 40px 0;
+}
+
+.box {
+    height: 200px;
+    background: #000;
+}
+
+.item {
+    margin: 0 30px;
+}
+
+.main-center .row {
+    margin: 0 -30px;
+}

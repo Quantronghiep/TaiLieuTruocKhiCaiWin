@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Sản phẩm</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="vendor/img/logo.jpg" type="image/x-icon" rel="icon">
+    <link rel="stylesheet" href="vendor/css/sanpham.css">
+    <link rel="stylesheet" href="vendor/css/modalBoxes.css">
+    <link rel="stylesheet" href="vendor/css/back-to-top.css">
+    <!-- Load an icon library --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- start nav -->
+    <div id="nav">
+        <div class="container">  
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <img class="navbar-brand" src="vendor/img/logo.jpg" alt="logo">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="vanphongpham.html">Trang chủ <span class="sr-only">(current)</span>
+                    <i class="fa fa-home" aria-hidden="true"></i></a>
+                    
+                </li>     
+                        <li><a class="nav-link" href="sanpham.html">Sản phẩm
+                    <i class="fas fa-grip-horizontal"  aria-hidden="true"></i>
+                </a>
+                        </li>
+                <li>
+                    <a class="nav-link" href="xemgiohang.html">Giỏ hàng
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+                        <li><a class="nav-link" href="lienhe.html">Liên hệ
+                    <i class="far fa-id-card"></i>
+                </a></li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+        </div>
+    <!-- end nav -->
+    <!-- start pagination -->
+    <div id="breadcrumb-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="title-main">
+                        <div class="container">
+                            <div class="pull">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a href="vanphongpham.html">Trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="sanpham.html">Sản phẩm</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end breadcum-box-->
+       <!-- start product -->
+      <div id="product">
+        <div class="container">
+          <div class="row">
+            <!-- start keyword -->
+            <div class="col-3 key-word">
+              <button class="accordion">Từ Khóa</button>
+              <div class="panel">
+                <div class="title">
+                  <input id="tukhoa" type="text" placeholder="Tìm kiếm từ khóa">
+                </div>     
+              </div>
+              
+              <button class="accordion">Giá sản phẩm</button>
+              <div class="panel">
+                <div class="gia">
+                  <small id="from-price pull-left">0</small>
+                  <small ><span id="to-price-pull-right"></span></small>
+                </div>
+                <div class="slidecontainer">
+                  <input type="range" min="0" max="1000000" value="50000" class="slider" id="myRange">
+                </div>
+              </div>
+              
+              <button class="accordion">Trạng thái</button>
+              <div class="panel">
+                <div class="check-value">
+                  <input type="radio" name = "moive" id = "id1">
+                  <label for="id1">Mới về</label><br>
+                  
+                  <input type="radio" name = "noibat" id = "id2">
+                  <label for="id2">Nổi bật</label>
+                  <br>
+                  
+                  <input type="radio" name = "danggiamgia" id = "id3">
+                  <label for="id3">Đang giảm giá</label><br>
+                  
+                  <input type="radio" name = "conhang" id = "id4">
+                  <label for="id4">Còn hàng</label>
+                </div></div>
+                
+                <button class="accordion">Danh mục sản phẩm</button>
+                <div class="panel">
+                  <div class="check-value">
+                    <input type="radio" name = "giay" id = "id5">
+                    <label for="id5">Tâm lý</label><br>
+                    
+                    <input type="radio" name = "dungcu" id = "id6">
+                    <label for="id6">Giáo dục</label>
+                    <br>
+                    
+                    <input type="radio" name = "dodung" id = "id7">
+                    <label for="id7">Truyện tranh</label><br>
+                    
+                    <input type="radio" name = "but" id = "id8">
+                    <label for="id8">Làm giàu</label>
+                  </div>
+                </div>
+                <button class="accordion">Xuất xứ</button>
+                <div class="panel">
+                  <input type="radio" name = "vietnam" id = "id5">
+                  <label for="id5">Việt Nam</label><br>
+                  
+                  <input type="radio" name = "Mĩ" id = "id6">
+                  <label for="id6">Mĩ</label>
+                  <br>
+                  
+                  <input type="radio" name = "Nhật Bản" id = "id7">
+                  <label for="id7">Nhật Bản</label><br>
+                  
+                  <input type="radio" name = "Trung Quốc" id = "id8">
+                  <label for="id8">Trung Quốc</label>
+                </div>
+                <button id="button-search" type="submit" value="submit">Tìm kiếm</button>
+            </div>
+            <!-- end keyword -->
+            <div class="col-9">
+              <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                  <div class="item">
+                    <div class="item-content">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-20%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/sach1.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Đắc Nhân Tâm 
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before">76,000 ₫  </div>
+                                <div class="price-well">59,200 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-18%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga2.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Naruto
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 28,000 ₫  </div>
+                                <div class="price-well">10,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-15%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga3.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Daragonball super
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 50,000 ₫  </div>
+                                <div class="price-well">43,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-20%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga4.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Ranma
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 25,000 ₫  </div>
+                                <div class="price-well">20,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-20%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga5.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  King Dom 
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before">76,000 ₫  </div>
+                                <div class="price-well">59,200 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-25%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga6.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Thanh gươm diệt quỷ
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 88,000 ₫  </div>
+                                <div class="price-well">60,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-22%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga7.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Naruto
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 38,000 ₫  </div>
+                                <div class="price-well">28,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-20%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga8.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Học viện thám tử
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 50,000 ₫  </div>
+                                <div class="price-well">45,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-30%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga9.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Dragonball super 
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before">73,000 ₫  </div>
+                                <div class="price-well">60,200 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-21%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga10.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Anh em phi hành gia
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 30,000 ₫  </div>
+                                <div class="price-well">25,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-20%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga11.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Gintama
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 98,000 ₫  </div>
+                                <div class="price-well">70,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="item-product">
+                            <div class="img-item">
+                              <span class="status-product">-10%</span>
+                              <a href="chitietsanpham.html"><img src="vendor/img/manga12.jpg" alt=""></a>
+                            </div>
+                            <div class="info-item">
+                              <h4 class="title-product">
+                                <a href="vanphongpham.html">
+                                  Jin
+                                </a>
+                              </h4>
+                              <div class="price">
+                                <div class="price-before"> 50,000 ₫  </div>
+                                <div class="price-well">40,000 ₫  </div>
+                                <div class="action-product">
+                                  <a class="item-action btn-add-to-cart"><i class="fa fa-shopping-cart"></i></a>
+                                  <a class="item-action btn-retweet"><i class="fa fa-retweet"></i></a>
+                                  <a class="item-action btn-showItem" id="detail"><i class="fa fa-eye"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+                        </div>
+                      </div>   
+                    </div>
+                  </div>
+                  <div class="pagination">
+                    <a >&laquo;</a>
+                    <a  class="active-pagination">1</a>
+                    <a >2</a>
+                    <a >3</a>
+                    <a >4</a>
+                    <a >5</a>
+                    <a >6</a>
+                    <a >&raquo;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    <!-- end product -->
+        <!-- start footer -->
+        <div id="footer">
+            <div class="bgBlack">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12  col-xs-12">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-3  col-xs-3">
+                        <a href="#">
+                          <img src="vendor/img/deli-logo-black-white.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-md-3 col-sm-3  col-xs-3">
+                        <a href="#">
+                          <img src="vendor/img/regal-free-vector-regal-logo-090174-regal-logo.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-md-3 col-sm-3  col-xs-3">
+                        <a href="#">
+                          <img src="vendor/img/mikkor-home-brand-logo-1.png" alt="">
+                        </a>
+                      </div>
+                      <div class="col-md-3 col-sm-3  col-xs-3">
+                        <a href="#">
+                          <img src="vendor/img/stabilo-stabilo-logo-white-760x150.png" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footerBorder">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12  col-xs-12 footer-bottom">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-3  col-xs-3 footer_1">
+                        <ul class="icon-footer">
+                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                          <li><a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <ul class="contact-footer">
+                          <li>
+                            <img src="vendor/img/logo.jpg" alt="">
+                          </li>
+                          <li>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <p>32 Võ Văn Dũng, Đống Đa, Hà Nội</p>
+                          </li>
+                          <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>(04) 7308 6680</p>
+                          </li>
+                          <li>
+                            <i class="fa fa-fax" aria-hidden="true"></i>
+                            <p>1900 2116</p>
+                          </li>
+                          <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>web.nhanhoa@gmail.com</p>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                      <div class=" col-md-3 col-sm-3  col-xs-3 footer_2">
+                        <h2 class="title-footer">Về chúng tôi</h2>
+                        <p>
+                          Stationary Shop được biết đến là một trong những hệ thống cửa hàng văn phòng phẩm lớn nhất cả nước với gần 30 chi nhánh trên cả nước.<a onclick="readMore()"  id="button">[more]</a> <span  id="more"> Trải qua gần 20 năm hoạt động, với sự chuyên nghiệp và uy tín, cửa hàng đã trở thành địa chỉ quen thuộc trên thị trường.Chúng tôi tin chắc rằng 
+                            Stationary Shop sẽ là một sự lựa chọn sáng suốt dành cho các bạn.</span> <a  onclick="readMore()" id="writeLess">[Thu gọn]</a>
+                        </p>
+                      </div>
+                      <div class=" col-md-3 col-sm-3  col-xs-3 footer_3">
+                        <h2 class="title-footer">Tin tức mới</h2>
+                        <div class="list-footer">
+                          <ul>
+                            <li>
+                              <a href="#">5 Cách Sử Dụng Đồ Dùng</a>            </li>
+                            <li>
+                              <a href="#">Mẹo Hay Sáng Tạo  </a>            </li>
+                            <li>
+                              <a href="#">Mẹo Hay Dân Văn Phòng     </a>         </li>
+                            <li>
+                              <a href="#">17 Mẹo Hữu Ích    </a>          </li>
+                            <li>
+                              <a href="#">Khuyến Mãi Mùa Thi </a>             </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class=" col-md-3 col-sm-3  col-xs-3 footer_4">
+                        <h2 class="title-footer">Câu hỏi thường gặp</h2>
+                        <div class="list-footer">
+                          <ul>
+                              <li>
+                                <a href="#">Shop Có Miễn Phí Ship   </a>         </li>
+                              <li>
+                                <a href="#">Mua Hàng Và Thanh Toán       </a>        </li>
+                              <li>
+                                <a href="#">Chuyển Khoản Qua Ngân Hàng    </a>           </li>
+                              <li>
+                                <a href="#">Thư Viện Ảnh     </a>          </li>
+                              <li>
+                                <a href="#">
+                                  Thư Viện Video            </a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end footer -->
+          <!-- backtotop -->
+    <div id="back-to-top" onclick="topFunction()">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+  <!-- start the modal boxes -->
+    <!-- The add-to-cart -->
+    <div id="add-to-cart" class="add-to-cart">
+      <div class="add-dialog">
+        <div class="add-content">
+          <div class="container">
+            <div class="row">
+              <span class="close">&times;</span>
+              <div class="col-sm-3 col-xs-3 img-modal">
+                <a href="#"><img src="vendor/img/sach1.jpg" alt="Vở ô ly hải tiến"></a>
+              </div>
+              <div class="col-sm-9 col-xs-9 content-modal">
+                <p class="text-modal product-name-modal">
+                  Đắc Nhân Tâm 
+                </p>
+                <p class="text-modal">
+                  được thêm vào giỏ hàng của bạn.
+                </p>
+                <p class="text-modal">
+                  <span class="price-modal">59,200₫</span> 
+                  <span class="price-sale-modal">
+                    76,000₫
+                  </span>
+                </p>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12">
+                    <div class="button-modal">
+                      <div class="row">
+                        <div class="col-sm-6 col-xs-6">
+                          <a href="xemgiohang.html" class="btn btn-success view-cart">
+                            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                            Xem giỏ hàng 
+                          </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                          <a onclick="continueShopping()"  class="btn btn-danger continue-shopping">
+                            Tiếp tục Mua hàng 
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>   
+    </div>
+    <!-- retweet -->
+    <div id="retweet" class="retweet">
+      <div class="retweet-dialog">
+        <div class="retweet-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="retweet-header">
+                  <i class="fa fa-exclamation-triangle icon-retweet" aria-hidden="true"></i>
+                  <p> Thông báo hệ thống</p>
+                </div>
+                <div class="retweet-body">
+                  <p>
+                    Đã thêm sản phẩm vào danh sách so sánh.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- The showItem -->
+    <div id="showItem" class="showItem">
+      <div class="showItem-dialog">
+        <div class="showItem-content">
+          <div class="container">
+            <div class="row">
+              <span class="close">&times;</span>
+              <div class="col-sm-6 col-md-6 col-xs-12">
+                <div class="showItem-img">
+                  <div class="view-img">
+                    <a href="">
+                      <img src="vendor/img/sach1.jpg" id="anh" alt="">
+                    </a>
+                  </div>
+                  <div class="thub-img">
+                    <p>
+                      <img src="vendor/img/sach1.jpg" id="slideanh1" alt="anh1">
+                      <img src="vendor/img/sach2.jpg" id="slideanh2" alt="anh2">
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-xs-12">
+                <h1 class="title-name-product">ĐẮC NHÂN TÂM (KHỔ LỚN) (TÁI BẢN)</h1>
+                <ul class="id-product">
+                  <li>
+                    <label> Mã sản phẩm: </label>
+                    <span class="selection">NH_00424</span>
+                  </li>
+                  <li>
+                    <label>  Thương hiệu:  </label>
+                    <span class="selection"> Nước ngoài </span>
+                  </li>
+                </ul>
+                <div class="price-product-showItem">
+                  <span class="price-main">
+                    59.280 ₫ 
+                  </span>
+                  <span class="discount">
+                    Giảm giá
+                    22 % 
+                  </span>
+                  <span class="price-sale price-before">
+                    76.000 ₫ 
+                  </span>
+                </div>
+                <div class="detail-product">
+                  <ul>
+                    <li>Sách đẹp</li>
+                    <li>Sách đẹp</li>
+                    <li>Sách đẹp</li>
+                  </ul>
+                </div>
+                <div class="material-product">
+                  <div class="author">
+                    <label >Tác giả:</label>
+                    <span class="selection">Dale Carnegie</span>
+                  </div>
+                  <div class="material">
+                    <label >Chất liệu:</label>
+                    <span class="selection">Bìa cứng</span>
+                  </div>
+                </div>
+                <div class="col-xs-12 amount">
+                    <label >Nhập số lượng:</label>
+                    <input type="number" min="1" max="10" value="1">  
+                </div>
+                <div class="col-xs-12 purchase">
+                  <a  id="btn-purchase" class="btn-purchase">
+                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    Thêm vào giỏ hàng 
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>   
+    </div>
+  <!-- end the modal boxes -->
+    <!-- Optional JavaScript -->
+    <script src="vendor/javascript/sanpham.js"></script>
+    <script src="vendor/javascript/backtoTop.js"></script>
+    <script src="vendor/javascript/readmore.js"></script>
+    <script src="vendor/javascript/modalBoxes.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4866413e08.js" crossorigin="anonymous"></script>
+  </body>
+</html>

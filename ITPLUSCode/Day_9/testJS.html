@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript</title>
+<!-- 3 cách nhúng file JS
+    + Nhúng inline trong thẻ Html thông qua sự kiện của JS
+    + Nhúng inline trong file .html sử dụng cặp thẻ <script>
+    + Nhúng file .js bên ngoài : file ngang hàng với file hiện tại
+
+    Hiệu suất khi nhúng code JS:
+     + Trình duyệt đọc file .html từ trên xuống
+     + Cần ưu tiên hiển thị giao diện trước( HTML,CSS) roofi mới đến JS
+     + Để tối ưu nhất code JS đặt trước thẻ đóng body
+-->
+<!-- Quy tac dat ten bien :
+   + Tên biến phải bắt đầu bằng bằng chữ hoặc kí tự gạch dưới _.
+    + Tên biến không được bắt đầu bằng số và không chứa các kí tự đặc biệt như &, *, (, ).
+    + Tên biến không được trùng với từ khóa như var, for, if...
+    Biến trong JS phân biệt hoa thường
+
+    MỌi lỗi JS đều hiển thị trong tab Console
+    Js không chạy code phía sau code lỗi
+-->
+<!-- Hằng
+    const PI = 3.14 ;
+-->
+<!-- Kiểu dữ liệu trong JS : nhìn vào bảng gtri của biến để biết kiểu dữ liệu 
+    +Number:
+        var number1 = 30 ;
+    +String : kiểu chuỗi ,gtri bao boi ' ' or " "
+    + Boolean : đúng/sai có 2 gtri : true/flase viết thường hết
+    + Undefined: kiểu không xác định , xả yra khi khai báo biến mà không gán giá trị
+    + NUll : kiểu dữ liệu đặc biệt , gặp khi thao tác với biến mà chưa tồn tại , có 1 giá trị duy nhất
+    + ARRAY: kiểu mảng , chứa đc nhiều giá trị tại 1 thời điểm
+    +Object : kiểu đối tượng , lập trình hướng đối tượng
+-->
+<!-- Hàm
+    Phân loại hàm :
+        + Hàm có sẵn
+        + Tự định nghĩa
+-->
+<!-- Phạm vi của biến 
+    + Biến cục bộ : chỉ hoạt động trong hàm , ngoài hàm không biết đến sự tồn tại của biến này
+    +Biến toàn cục : có thể truy cập đc từ mọi nơi sau khi khai báo biến
+-->
+<script type="text/javascript">
+    var name = 'Hiep' ; 
+    var age = 20 ;
+    document.write('My name is: ' + name);
+    document.write('</br>');
+    document.write("My age is: " + age);
+
+    const PI = 3.14 ;
+
+    var number1 = 20 ;
+    console.log(typeof number1);
+
+    var string1= 'String 1';
+    var string2= "String 2";
+    var string3 = "Hello 'Hiep'";
+    console.log(typeof string3);
+
+    var is_true = true ;
+
+    var arr = [10, 'abc' , true , 'def'];
+
+    var person = {
+        name: 'Hiep',
+        age : 20,
+        address: 'Ha Nam',
+        showInfo : function(){
+            console.log(this.name);
+        }
+    }
+
+    function showInfo() {
+        console.log("Hàm showInfo");
+    }
+    showInfo();
+
+    function sum( a , b){
+        return a+b ;
+    }
+    console.log(sum(3,4));
+
+    function showName(name) {
+        var string =  "Ten cua ban : " + name;
+        return string ;
+    }
+        console.log(showName('Hiep'));
+
+    function showVar(){
+        var local = "Hello" ;
+    }
+    showVar();
+    // console.log(local); Lỗi 
+
+    var smile = "Hahaha";
+    function showSmile(){
+        console.log(smile);
+    }
+    showSmile() ;
+</script>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+</head>
+<body>
+    <h1 onclick="alert('Quan Trong Hiep')">Click</h1>
+</body>
+</html>
+
+

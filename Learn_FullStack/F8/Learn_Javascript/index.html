@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="obj_constructor.js"></script> -->
+    <script src="map2.js"></script>
+</head>
+<body>
+    <script>
+       var myArray = [
+        [1,2],
+        [3,4],
+        [5,6],
+        ];
+
+        // for (childArray of myArray) {
+        //     for (element of childArray) {
+        //         console.log(element)
+        //     }
+// }
+
+function getRequestBodyFromValues(formValues) {
+    // var inFo = { };
+    // formValues.forEach(function(formValue ){
+    //    inFo[formValue.field] = formValue.value;
+    // });
+    // return inFo;
+      let result = {}
+  formValues.filter((obj) => {
+    result[obj.field] = obj.value;
+  })
+  return result;
+}
+// getRequestBodyFromValues([ { field: 'name', value: 'Sơn Đặng' }, { field: 'age', value: 18 } ])
+
+
+        var firstJob = (doJob) => {
+            console.log('1. Input coffee in tea')
+            if (typeof doJob === 'function') {
+                doJob()
+            }
+
+        }
+
+        var secondJob = (doJob2) => {
+            console.log('2. Add 2 tablespoons of suger ')
+            if (typeof doJob2 === 'function') {
+                doJob2()
+            }
+        }
+
+        var goonJob = () => {
+            console.log('3. Use a spoon to stir')
+        }
+
+        firstJob(secondJob(goonJob))
+
+       
+
+        function myFunction(param){
+          console.log('2');
+          if (typeof param === 'function'){
+            param('Hiep');
+          }
+        }
+        function myCallback(value){
+          console.log('Value : ',value);
+        }
+
+        myFunction(myCallback);
+
+
+    </script>
+
+
+</body>
+</html>

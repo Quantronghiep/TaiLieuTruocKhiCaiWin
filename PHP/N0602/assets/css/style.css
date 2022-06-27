@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 50px;
+    background-color: pink;
+}
+
+ul li a {
+    padding: 0 20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}

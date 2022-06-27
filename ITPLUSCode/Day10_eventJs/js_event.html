@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xử lí sự kiện trong JS</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("Hello");
+		// alert("Alert");
+		// -Hiển thị popup dưới dang input nhập
+		// var name = prompt("Nhap ten cua ban");//hàm prompt trả về return
+		// console.log(name);
+		//-Hiển thị popup dưới dang có hoặc không
+		// var isConfirm = confirm('Ban co muon xoa khong');
+		// console.log(isConfirm);
+		//- Lấy đối tượng / phần tử HTML theo id của nó , dùng nhiều trong JS thuần
+	</script>
+	<p id="p1">Lấy đối tượng p này</p>
+	<script>
+		var obj =document.getElementById('p1');
+		console.log(obj);
+		//- Set nội dung cho đối tượng HTML
+		//Set theo định dạng HTML
+		obj.innerHTML = '<b>Thẻ p bị in đậm </b>' 
+		//- Set theo định dạng TEXT
+		// obj.innerText = '<b>Thẻ p bị in đậm </b>' ;
+		//- Get nội dung của đối tượng HTML
+		var p_content = obj.innerHTML;
+		// console.log(p_content);
+		//Chuyển hướng
+		// window.location = "https://google.com";
+
+		//- Lấy độ dài chuỗi
+		var str = "Trong Hiep";
+		var length = str.length;
+		console.log(length)
+		// + Tìm kiếm chuỗi ký tự trong 1 chuỗi ban đầu : trả về vị trí đầu tiên nó tìm thấy
+		var email = 'quantronghiep2001@gmail.com';
+		var position = email.indexOf("hiep");
+		console.log(position);
+		// + Gửi mail bằng trình gửi mail mặc định của window -> outlook:
+	 	// window.open('mailto:quantronghiep2001@gmail.com');
+	</script>
+	<a href="#" onclick="alert('Alert')">Click thẻ a show alert</a>
+	<h1 id="h1-click">Click để show cảnh báo</h1>
+	<script>
+		//Xử lí sự kiện khi click H1
+		var obj_h1 = document.getElementById("h1-click");
+		// -Gắn sự kiện cho đối tượng vừa lấy được
+		// Hàm này nhận 2 giá trị : 
+			// + Gía trị đầu : sự kiện : click , focus , blur , submit
+			// + GIÁ TRỊ 2 : hàm callback
+		// Hàm callback trong lập trình: hàm chờ sự kiện trước nó xảy ra xong thì nó mới chạy, hàm callback đc truyền như 1 tham số
+		obj_h1.addEventListener('click',function(){
+			alert("This is tag H1");
+		});
+		// - XỬ LÝ SỰ KIỆN TRONG JAVASCRIPT
+		// + Mỗi hành động của user trên trang, bạn đều có thể bắt dc thông qua các sự kiện của Javascript
+		//Lấy đối tượng HTML = document.getElementById
+
+		//Code sau vẫn chạy đc do JS và PHP là ngôn ngữ biên dịch 2 lần
+		testJS();
+		function testJS(){
+			console.log("Hàm TEst JS");
+		}
+		
+	</script>
+
+	<select name="" id="event-onchange">
+		<option value="vn">VN</option>
+		<option value="tq">TQ</option>
+		<option value="jp">JPan</option>
+	</select>
+
+	<h2 id="h2-hover">Demo onmouseenter và onmouseleave</h2>
+	<script>
+		//DEMO CAC SỰ KIỆN HAY GẶP
+		// - Sự kiện click 
+		// - Sự kiện onchange : áp dụng cho select , radio , checkbox
+		//Lấy đối tượng HTML
+		var obj_select = document.getElementById('event-onchange');
+		// JSco sự kiện onchange -> truyền vào hàm : change
+		obj_select.addEventListener('change',function(){
+			// LẤy đối tượng hiện tại: this
+	 		// + Lấy giá trị của option đc select:
+			 console.log(this.value);
+			 // + LẤy nội dung text của option đc chọn:
+	 		var text_option = this.options[this.selectedIndex].text;
+	 		console.log(text_option);
+	 		// Với input radio và checkbox xử lý hoàn toàn tương tưj select
+		});
+
+		//- Sự kiện trạng thái hover 
+			// onmouseover + onmouseout
+			//onmouseenter + onmouseleave
+		var obj_h2 = document.getElementById('h2-hover');
+		obj_h2.addEventListener('mouseenter',function(){
+			this.style = 'color : red';
+		});
+		obj_h2.addEventListener('mouseleave',function(){
+			this.style = 'color : blue';
+		});
+	</script>
+		
+	<script>
+		//Sự kiện onload
+		// var obj_a = document.getElementById('a-onload');
+		// obj_a.addEventListener('click',function(){
+		// 	alert("This is tag a");
+		// })
+		//Chạy code trên báo lỗi đối tượng bị NULL 
+		//Sử dụng sự kiện onload để xử lí : chờ HTML CSS tải xong mới chạy JS
+		// onload tương đương document.ready của jQuery -> Không quan tâm thứ tự code JS ,Html ,Css
+		window.addEventListener('load',function(){
+			var obj_a = document.getElementById('a-onload');
+			obj_a.addEventListener('click',function(){
+				alert("This is tag a");
+			});
+		});
+	</script>
+	<a href="#" id="a-onload">Click thẻ a để show alert</a>
+	<br>
+	keyup<input type="text" id="input-keyup">
+	<br>
+	keydown<input type="text" value="" id="fullname">
+	<script>
+		//Sự kiện onkeyup : nhấn vào 1 phím trên bàn phím và nhả ra -> gọi skien keyup
+		var obj_input = document.getElementById('input-keyup');
+		obj_input.addEventListener('keyup',function(){
+			//Lấy giá trị của input hiện tại mõi khi nhập
+			var input_value = this.value;
+			console.log(input_value);
+		})
+		//Sự kiện onkeydown : xảy ra ngay thời điểm nhấn phím
+		var obj = document.getElementById('fullname');
+		obj.addEventListener('keydown',function(){
+			var input_value = this.value;
+			console.log(input_value);
+		})
+	</script>
+	<br>
+	focus<input type="number" id="amount">
+	<script>
+		// Sự kiện onfocus và onblur
+		// focus : xảy ra khi ở trong input
+		var obj = document.getElementById('amount');
+		obj.addEventListener('focus',function(){
+			console.log('OnFocus')
+		})
+		// Blur : xảy ra khi không ở trong input nữa
+		var obj = document.getElementById('amount');
+		obj.addEventListener('blur',function(){
+			console.log('OnBlur')
+		})
+	</script>
+
+	<form action="" method="" id="form">
+		Nhập tên 
+		<input type="text" id="name"><br>
+		Nhập tuổi: 
+		<input type="number" id="age"><br>
+		<input type="submit" id="" value="Show thông tin">
+	</form>
+	<script>
+		//OnSubmit : chỉ xảy ra trên thẻ form , xảy ra khi submit form - gửi thông tin
+		/* Có 2 cách submit form :
+			+ Trực quan nhất : click nút SUbmit
+			+ Đứng trong 1 input và enter
+		*/ 
+		// Với kiến thức hiện tại dùng sự kiện onsubmit khi form có 1 nút submit duy nhất
+		 var obj = document.getElementById('form')
+		 obj.addEventListener('submit',function(){
+			var obj_name = document.getElementById('name');
+			var name = obj_name.value;
+
+			var obj_age = document.getElementById('age');
+	 		var age = obj_age.value;
+
+			 console.log('Tên vừa nhập :' + name);
+		 })
+	</script>
+</body>
+</html>

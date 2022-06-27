@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+}
+
+.logo{
+    width: 20%;
+    line-height: 100px;
+    color: #000;
+    background: pink;
+}
+
+.home{
+    width: 80%;
+}
+
+.banner{
+    height: 60%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.menu{
+    height: 40%;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    display: inline-block;
+    width: 25%;
+    /* float: left; */
+    background: #666666;
+    padding: 10px;
+    border: 1px solid;
+    color: #fff;
+    font-weight: 800;
+}
+.main{
+    height: auto;
+    display: flex;
+}
+
+.travel{
+    width: 25%;
+}
+.travel li {
+    padding: 10px;
+    background: #33CC33;
+    border: 1px solid;
+}
+
+.registration{
+    width: 75%;
+}
+
+.title {
+    color: green;
+    text-align: center;
+}
+
+span {
+    color: red;
+}

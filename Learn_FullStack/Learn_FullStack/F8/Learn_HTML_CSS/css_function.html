@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* linear-gradient */
+        #grad1 {
+            height: 200px;
+            background-image: linear-gradient(red, yellow, blue);
+        }
+        /* Var */
+        :root{
+            --text-color:red;
+        }
+        h2{
+            color:var(--text-color);
+        }
+        h1{
+            --my-color:blue;
+            color:var(--my-color);
+        }
+        /* CALC */
+        .box{
+            background-color: pink;
+            width: calc(10%+20px);
+            height: 100px;
+        }
+        /* attr*/
+        .box::after{
+            content: attr(data-title);
+        }
+        a::after{
+            content: "("attr(href)")";
+        }
+    </style>
+</head>
+<body>
+    <div id="grad1"></div>
+    <h1>Day la the H1</h1>
+    <h2>This is tag H2</h2>
+    <div class="box" data-title="Day la box mau hong"></div>
+    <a href="google.com">Day la website</a>
+</body>
+</html>

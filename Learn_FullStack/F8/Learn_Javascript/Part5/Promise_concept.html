@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Các trạng thái
+            // 1 . Pennding : chờ thành công hay thất bại ( rò rì bộ nhớ Memory leak)
+            // 2 . Fuifilled : thành công
+            // 3 . Rejected : thất bại
+
+        // Promise để giải quyết các thao tác bất đồng bộ
+        // Trước khi có Promise thì ta sd callback , xảy ra vấn đề Callback hell ( nhiều callback , đi sâu khó nhìn)
+        // Tạo ra Promise dùng từ khóa new Promise() , trong constructor của nó truyền vào 1 Executor function
+// có 2 tham số dạng hàm : resolve , reject       
+        // Có các phương thức của promise : then , catch , finally . Đều nhận vào callback
+
+        // 1.new Promise 
+        // 2. Executor
+        var promise = new Promise(
+            //Executor
+            function(resolve,reject){
+                //Xu li logic
+                //Thanh cong : resolve()
+                //That bai : reject()
+                resolve();
+            }
+        )
+
+        promise
+            //Khi thanh cong thi dc goi
+            .then(function(){
+               console.log('ok')
+            })
+            .then(function(success){
+                console.log(success)
+            })
+            //Khi that bai ,tu choi  
+            .catch(function(){
+
+            })
+            //Thanh cong hay that bai deu lot vao day
+            .finally(function(){
+                console.log("Done!")
+            })
+
+            // var i = 1;
+            // setInterval(function(){
+            //     console.log(i);
+            //     i++;
+            // },2000)
+
+           
+    </script>
+</body>
+</html>

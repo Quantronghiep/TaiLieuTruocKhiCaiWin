@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thông tin thanh toán</title>
+	<link href="vendor/img/logo.jpg" type="image/x-icon" rel="icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4866413e08.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="vendor/css/xemgiohang.css">
+	<link rel="stylesheet" href="vendor/css/lienhe.css">
+</head>
+<body>
+	<div id="nav">
+        <div class="container">  
+          <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <img class="navbar-brand" src="vendor/img/logo.jpg" alt="logo">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+					<a class="nav-link" href="vanphongpham.html">Trang chủ <span class="sr-only">(current)</span>
+					  <i class="fa fa-home" aria-hidden="true"></i></a>
+					  
+				  </li>     
+				  <li><a class="nav-link" href="sanpham.html">Sản phẩm
+					  <i class="fas fa-grip-horizontal"  aria-hidden="true"></i>
+				  </a>
+				  </li>
+				  <li>
+					  <a class="nav-link" href="xemgiohang.html">Giỏ hàng
+						  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+					  </a>
+				  </li>
+				  <li><a class="nav-link" href="lienhe.html">Liên hệ
+					  <i class="far fa-id-card"></i>
+				  </a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+	<!-- end nav -->
+	<!-- start pagination -->
+	<div id="breadcrumb-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-xs-12">
+					<div class="title-main">
+						<div class="container">
+							<div class="pull">
+								<ol class="breadcrumb">
+									<li>
+										<a href="vanphongpham.html">Trang chủ</a>
+									</li>
+									<li>
+										<a href="xemgiohang.html">Thông tin thanh toán</a>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcum-box-->
+	<div id="checkProduct">
+		<div class="container">
+			<div class="infor-item">
+			 		<div class="row">
+			 			<div class="col-md-8 infor-delivery">
+			 				<div class="row" id="infor">
+			 					<div class="col-md-6 col-xs-6 active-info address active-delivery" id="address-form">
+			 						<a> Địa chỉ giao hàng </a>
+			 					</div>
+			 					<div class="col-md-6 col-xs-6 active-info login " id="login-form">		 	
+									<a > Đăng nhập </a>
+			 					</div>
+			 				</div>		 				
+			 				<div class="info-content" id="info-content">	
+								<div class="row " id="address-cart">
+									<div class="col-md-6  col-xs-12">
+										<div class="form-group">
+											 <input id="fullName" class="form-control" name="full_name" placeholder="Họ và tên" type="text">
+											 <div class="alert-form-content">
+												 <span class="alert-form"></span>
+											 </div>
+										</div>
+									</div>
+									<div class="col-md-6  col-xs-12">
+										<div class="form-group">
+											 <input id="phone" class="form-control" name="number" placeholder="Số điện thoại" type="text">
+											 <div class="alert-form-content">
+												<span class="alert-form"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6  col-xs-12">
+										<div class="form-group">
+											 <input id="email" class="form-control" name="email" placeholder="Email" value="" type="email">
+											 <div class="alert-form-content">
+												<span class="alert-form"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6  col-xs-12">
+										<div class="form-group">
+											 <select id="province">
+												 <option> -- Tỉnh thành --</option>
+												 <option value="Hà Nội">Hà Nội</option>
+												 <option value="Hà Nam">Hà Nam</option>
+												 <option value="Bắc Ninh">Bắc Ninh</option>
+											 </select>
+											 <div class="alert-form-content">
+												<span class="alert-form"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6  col-xs-12">
+										<div class="form-group">
+											 <select id="district"  >
+												 <option> -- Quận huyện --</option>	 
+												 <option value="Bắc Ninh">TP Bắc Ninh</option>	
+												 <option value="Từ Sơn">Từ Sơn</option>
+												 <option value="Tiên Du">Tiên Du</option>	
+											 </select>
+											 <div class="alert-form-content">
+												<span class="alert-form"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6  col-xs-12">
+										<div class="form-group">
+											 <select id="wards">
+												 <option> -- Phường xã --</option> 	
+												 <option value="Vệ An">Vệ An</option>
+												 <option value="Võ Cường">Võ Cường</option>
+												 <option value="Tiền An">Tiền An</option>
+											 </select>
+											 <div class="alert-form-content">
+												<span class="alert-form"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12  col-xs-12">
+										<div class="form-group">
+											 <input id="address" class="form-control" name="diachi" placeholder="Địa chỉ" value="">
+											 <div class="alert-form-content">
+												<span class="alert-form"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12  col-xs-12">
+										<div class="form-group">
+											 <input id="about" class="form-control" name="ghichu" placeholder="Ghi chú" >
+											 <div class="alert-form-content">
+												<span class="alert-form"></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12  col-xs-12 btn-cart ">
+										<button class="btn-process-payment" onclick="formValidation()"> 			Tiếp tục Thanh toán 
+										<i class="fa fa-arrow-right" aria-hidden="true"></i>
+										</button>
+									</div>
+								</div>		
+			 				</div>
+						 </div>	
+						 <col-sm-1 class="col-md-1"></col-sm-1>
+			 			<div class="col-md-3 infor-cart">
+							<div class="row">
+								<div class="col-sm-12 col-xs-12 infor-line">
+									<a> Thông tin đơn hàng </a>
+								</div>
+								<div class="col-sm-12 col-xs-12 infor-line-content"  >
+									<div class="product-line" id="product-line">
+										<div class="product-line-content">
+											<a class="icon-line">
+												<i class="fa fa-times" aria-hidden="true"></i>
+											</a>
+											<div class="media-left">
+												<a>
+													<img src="vendor/img/sach1.jpg" alt="sach1">
+												</a>
+											</div>
+											<div class="media-body">
+												<h4 class="media-heading"><a >Đắc Nhân Tâm (Khổ Lớn) (Tái Bản)</a> </h4>
+												 <p class="price-before">
+												76.000 đ 
+												</p>
+												<p class="price-well">                 
+												59.280 đ  
+												</p>
+											</div>
+									
+										</div>	
+										<div class="item-promotion">
+											<button class="accordion">Số lượng:</button>
+											<div class="panel panel_1 ">
+												<div class="price-promotion">
+													<small id="from-price pull-left">0</small>
+												</div>
+												<div class="slidecontainer">
+													<input type="range" min="0" max="100" value="1" class="slider" id="myRange">
+												</div> 
+												<div class="price-promotion">
+													<small id="to-price-pull-right"></small>
+												</div>
+											</div>
+											<button class="accordion">Sử dụng Voucher:</button>
+											<div class="panel">
+												<div class="delete-coupon">
+													<a><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+												</div>
+												<input class="coupon-code" type="text">
+												<div class="check-coupon">
+													<a><i class="fa fa-check" aria-hidden="true"></i></a>	
+												</div>
+											</div>
+										</div>	
+										<div class="bill">
+											<div class="total">
+												<div class="pull-left">
+													<strong>Tổng cộng: </strong>
+												</div>
+												<div class="pull-right">
+													<strong class="total-price">59.280 đ </strong>
+												</div>
+											</div>
+											<div class="into-money">
+												<div class="pull-left">
+													<strong>Thành tiền: </strong>
+												</div>
+												<div class="pull-right">
+													<strong class="total-price">59.280 đ </strong>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+			 			</div>
+			 		</div>
+			 	</div>
+		</div>
+	</div>
+		    <!-- start footer -->
+			<div id="footer">
+				<div class="bgBlack">
+				  <div class="container">
+					<div class="row">
+					  <div class="col-md-12 col-sm-12  col-xs-12">
+						<div class="row">
+						  <div class="col-md-3 col-sm-3  col-xs-3">
+							<a href="#">
+							  <img src="vendor/img/deli-logo-black-white.png" alt="">
+							</a>
+						  </div>
+						  <div class="col-md-3 col-sm-3  col-xs-3">
+							<a href="#">
+							  <img src="vendor/img/regal-free-vector-regal-logo-090174-regal-logo.png" alt="">
+							</a>
+						  </div>
+						  <div class="col-md-3 col-sm-3  col-xs-3">
+							<a href="#">
+							  <img src="vendor/img/mikkor-home-brand-logo-1.png" alt="">
+							</a>
+						  </div>
+						  <div class="col-md-3 col-sm-3  col-xs-3">
+							<a href="#">
+							  <img src="vendor/img/stabilo-stabilo-logo-white-760x150.png" alt="">
+							</a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="footerBorder">
+				  <div class="container">
+					<div class="row">
+					  <div class="col-md-12 col-sm-12  col-xs-12 footer-bottom">
+						<div class="row">
+						  <div class="col-md-3 col-sm-3  col-xs-3 footer_1">
+							<ul class="icon-footer">
+							  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							  <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							  <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+							  <li><a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+							</ul>
+							<ul class="contact-footer">
+							  <li>
+								<img src="vendor/img/logo.jpg" alt="">
+							  </li>
+							  <li>
+								<i class="fa fa-home" aria-hidden="true"></i>
+								<p>32 Võ Văn Dũng, Đống Đa, Hà Nội</p>
+							  </li>
+							  <li>
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<p>(04) 7308 6680</p>
+							  </li>
+							  <li>
+								<i class="fa fa-fax" aria-hidden="true"></i>
+								<p>1900 2116</p>
+							  </li>
+							  <li>
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+								<p>web.nhanhoa@gmail.com</p>
+							  </li>
+							</ul>
+							
+						  </div>
+						  <div class=" col-md-3 col-sm-3  col-xs-3 footer_2">
+							<h2 class="title-footer">Về chúng tôi</h2>
+							<p>
+							  Stationary Shop được biết đến là một trong những hệ thống cửa hàng văn phòng phẩm lớn nhất cả nước với gần 30 chi nhánh trên cả nước.<a onclick="readMore()"  id="button">[more]</a> <span  id="more"> Trải qua gần 20 năm hoạt động, với sự chuyên nghiệp và uy tín, cửa hàng đã trở thành địa chỉ quen thuộc trên thị trường.Chúng tôi tin chắc rằng 
+								Stationary Shop sẽ là một sự lựa chọn sáng suốt dành cho các bạn.</span> <a  onclick="readMore()" id="writeLess">[Thu gọn]</a>
+							</p>
+						  </div>
+						  <div class=" col-md-3 col-sm-3  col-xs-3 footer_3">
+							<h2 class="title-footer">Tin tức mới</h2>
+							<div class="list-footer">
+							  <ul>
+								<li>
+								  <a href="#">5 Cách Sử Dụng Đồ Dùng</a>            </li>
+								<li>
+								  <a href="#">Mẹo Hay Sáng Tạo  </a>            </li>
+								<li>
+								  <a href="#">Mẹo Hay Dân Văn Phòng     </a>         </li>
+								<li>
+								  <a href="#">17 Mẹo Hữu Ích    </a>          </li>
+								<li>
+								  <a href="#">Khuyến Mãi Mùa Thi </a>             </li>
+							  </ul>
+							</div>
+						  </div>
+						  <div class=" col-md-3 col-sm-3  col-xs-3 footer_4">
+							<h2 class="title-footer">Câu hỏi thường gặp</h2>
+							<div class="list-footer">
+							  <ul>
+								  <li>
+									<a href="#">Shop Có Miễn Phí Ship   </a>         </li>
+								  <li>
+									<a href="#">Mua Hàng Và Thanh Toán       </a>        </li>
+								  <li>
+									<a href="#">Chuyển Khoản Qua Ngân Hàng    </a>           </li>
+								  <li>
+									<a href="#">Thư Viện Ảnh     </a>          </li>
+								  <li>
+									<a href="#">
+									  Thư Viện Video            </a>
+								  </li>
+							  </ul>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+	<!-- end footer -->
+	<script src="vendor/javascript/xemgiohang.js"></script>
+	<script src="vendor/javascript/readmore.js"></script>
+	<script src="vendor/javascript/formValidation.js"></script>
+</body>
+</html>

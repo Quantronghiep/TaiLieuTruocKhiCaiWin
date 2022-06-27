@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="app">
+
+        <header>
+            <h1 id="first-heading">
+                Học JS HTML DOM tại F8!
+            </h1>
+        </header>
+    
+        <div id="app-body">
+            <h2 id="second-heading">
+                Học qua video + làm bài tập!
+            </h2>
+        </div>
+    
+    </main>
+
+    <script>
+        var appElement = document.getElementById('app');
+        var firstHeadingElement = document.getElementById('first-heading');
+        var appBodyElement = document.getElementById('app-body');
+        var secondHeadingElement = document.getElementById('second-heading');
+
+        var firstHeadingAttr = firstHeadingElement.id;
+
+        // typeof  appBodyElement
+        // 'object'
+        // typeof  appBodyElement.innerHTML
+        // 'string'
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	margin: auto;
+	width: 80%;
+}
+.background {
+	background-color: #DCDBDB;
+	margin-top: 15px;
+}
+.logo {
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+.menu{
+	text-align: center;
+	padding: 15px 0 15px 0 ;
+}
+li {
+	margin : 0 15px;
+	display: inline-block;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+.feature {
+	text-align: center;
+	height: 100px;
+}
+.column {
+	margin-top: 15px;
+	text-align: center;
+}
+.row{
+	display: flex;
+}
+.col {
+	width: 33.33%;
+	/*margin : 0 -20px ;*/
+	padding-bottom: 50px;
+
+}

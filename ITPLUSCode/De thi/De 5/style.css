@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+#ok {
+    background-color: #fff;
+    padding: 16px 0 48px 0 ;
+}
+
+#phone {
+    text-align: right;
+}
+
+#banner01 {
+    width: 100%;
+}
+
+.danhmuc {
+    background-color: green;
+    height: 100%
+}
+
+nav {
+    padding-left: 5px;
+    
+}
+.gach {
+    border: 1px  #fff;
+    border-style: dashed none none none ;
+}
+.timkiem{
+    width: 100%;
+    position: relative;
+}
+
+#search {
+    /* width: 100%; */
+    border-radius: 5px;
+    border : 1px solid;
+     margin: 5px 0;
+     margin-left: 10px;
+     width: 90%;
+}
+
+#iconSearch {
+    position: absolute;
+    /* z-index: 1; */
+    color: #4f5b66;
+    right: 30px;
+    top: 5px;
+}
+
+.clothes1{
+    background-color: teal;
+}
+
+.title{
+    color: yellowgreen;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.thongtin , #button {
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+}
+
+.thongtin {
+    font-size: 15px;
+    text-align: center;
+}
+#button {
+    margin: 0 auto;
+}
+button {
+    background-color: lightblue;
+}
+
+.footer {
+    margin-top: 15px;
+}
+.logo {
+    color: rgb(207, 163, 163);
+}
+
+.banquyen {
+    color: #fff;
+}

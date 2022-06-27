@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO jQuery 2</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script>
+        // 2 . Module jQuery Attribute
+        // Thao tác với các thuộc tính của đối tượng HTML : style , id , class , href
+        $(document).ready(function(){
+            var a_title = $('.a1-class').attr('title');
+            console.log(a_title);
+            // Sử dụng JS thuần
+                // var a_title = document.getElementById('a1-id').title;
+                // console.log(a_title);
+        // Get , Set thuộc tính
+            $('#a1-id').attr('href','https://facebook.com');
+        // + Xóa thuộc tính: removeAttr
+            $('.a1-class').removeAttr('title');
+        //+ Check có class cho trc hay không : hasClass
+            var isCheck = $('#a1-id').hasClass('abc');
+            console.log(isCheck);
+        // + Set css: css
+            $('.a1-class').css('background', 'yellow')
+        // + Xóa class theo tên : removeClass
+            $('#h3-id').removeClass('class3');
+        // + Lấy nội dung của đối tượng HTML , áp dụng cho thẻ HTML đầy đủ : html , text
+            //Get
+			var html = $('#h1-id').html();
+			console.log(html);
+            var text = $('#h1-id').text();
+            console.log(text);
+            //Set
+			$('#h2-id').html('<i>H2 in nghiêng</i>');        
+			// $('#h2-id').text('<i>H2 in nghiêng</i>');  
+        // + Get/set giá trị của input: val
+            // var value = $('#input-id').attr('value');
+			var val = $('input-id').val();  
+            /* Chú ý : obj lấy bằng JS thuần và jQue là hoàn toàn khác nhau nên không dùng chung đc các hàm của nhau */
+            $('#input-id').val('hahaha')
+        //3 . - jQuery DOM --// Thao tác với cây DOM / HTML
+            // +Xóa DOM : remove
+            $('#strong-id').remove();
+            // + Thêm obj HTML vào trước obj hiện tại và ngang hàng : before
+            $('#a2-id').before('<b> Thẻ b trước </b>')
+            // + Thêm obj HTML vào sau obj hiện tại và ngang hàng : after
+            $('#a2-id').after('<b> Thẻ b sau </b>')
+            // + Thêm obj HTML vào đầu/cuối nội dung của obj HTML hiện tại : prepend , append
+        //4 .- jQuery Event :  Cung cấp các hàm xử lý sự kiện, tên hàm chính là tên sự kiện của Javascript
+            // var obj_p = document.getElementById('p-id');
+            // obj_p.addEventListener('click',function(){
+            //     alert("Hello nè");
+            // })
+            // jQuery
+            $('#p-id').click(function(){
+                alert("Fighting");
+            })
+        //5 . Module jQuery Effect : hiệu ứng
+        $('#hide').click(function(){
+                $('#div-id').hide(3000); // ẩn dần trong 3 giây
+            })
+       
+        $('#show').click(function(){
+                $('#div-id').show(3000); // hiện dần trong 3 giây
+            })
+        $('#auto').click(function(){
+                $('#div-id').toggle(); // auto
+            })
+        $('#animate').click(function() {
+				// Dùng hàm animate để tạo 1 hiệu ứng
+				//phức tạp
+				// Tạo 1 biến kiểu object
+				var obj = {
+					width: "50%",
+					background: 'red',
+					marginLeft: '40px',
+					fontSize: '50px',
+					borderWidth: '10px',
+					opacity: 0.5
+				};
+				// Tạo  hiệu ứng trong 5s
+				$('#div-id').animate(obj, 5000);
+			});
+
+        //6.- Module jQuery Ajax
+            // + Cơ chế ko đồng bộ: ko cần chờ chức năng trước nó đc xử lý xong, mà vẫn có thể chạy trước
+			// + Ajax sử dụng với PHP để tạo ra 1 website cho phép tương tác với CSDL mà ko hề tải lại trang
+            // + So sánh cơ chế đồng bộ và ko đồng bộ với hàng đợi
+			// Đồng bộ: vào trước xử lý trc
+			// Ko đồng bộ: vào sau vẫn có thể đc xử lý trc
+                // + Học chi tiết ở phần PHP, sau khi học xong CSDL
+                // + Khai báo ajax dùng jQuery
+            $.ajax({
+				// Url xử lý ajax, url này sẽ là file PHP
+				url: 'get_list.php',
+				// Phương thức truyền dữ liệu từ ajax
+				method: 'post',
+				// Dữ liệu gửi lên, gửi lên tên, tuổi
+				data: {
+					name: 'Hiệp',
+					age: 20
+				},
+				// Nơi nhận kết quả trả về sau khi PHP xử lý xong, chứa trong tham số của phương thức success -> data
+				success: function(data) {
+					console.log(data);
+				}
+			});
+        })
+    </script>
+    <div id="div-id" style="width: 200px;height: 200px;background:yellow">Thẻ div</div>
+    <button id="show">Click show div</button>
+    <button id="hide">Click ẩn</button>
+    <button id="auto">Click ẩn/hiện tự động</button>
+    <button id="animate">Click chuyển động div</button>
+
+
+    <p id="p-id">Click để show alert</p>
+
+    <a href="#" id="a2-id">Thẻ a2</a>
+    <strong id="strong-id"> Thẻ strong</strong>
+    <input type="text" id="input-id" value="68686868">
+    <h1 id="h1-id">
+        <u>Nội dung gạch chân</u>
+    </h1>
+    <h2 id="h2-id">Thẻ H2</h2>
+    <h3 id="h3-id" class="class1 class2 class3">Thẻ H3</h3>
+    <a href="https://google.com" title="Link google" id="a1-id" class="a1-class">Click để tới GG</a>
+</body>
+</html>

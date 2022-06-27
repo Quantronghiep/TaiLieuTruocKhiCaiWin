@@ -1,0 +1,14 @@
+.bt3 {
+    max-width: 40%;
+}
+
+.ex {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.select , input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}

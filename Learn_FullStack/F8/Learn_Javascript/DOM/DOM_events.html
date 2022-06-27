@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <span>DOM EVENTS 1</span>
+    </h1>
+    <h1>
+        <span>DOM EVENTS 2</span>
+    </h1>
+    <h1>
+        <span>DOM EVENTS 3</span>
+    </h1>
+
+    <script>
+        var h1Elements = document.querySelectorAll('h1');
+        for(var i =0 ; i< h1Elements.length ; i++){
+            h1Elements[i].onclick = function(e){
+                console.log(e.target)
+            }
+        }
+        // var h1Element = document.querySelector('h1')
+        // h1Element.onclick = function(){
+        //     alert('hello')
+        // } 
+        // h1Element.onclick = alert('hello');
+
+    </script>
+</body>
+</html>
+

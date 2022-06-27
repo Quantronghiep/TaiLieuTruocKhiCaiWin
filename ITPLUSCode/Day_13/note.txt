@@ -1,0 +1,12 @@
+1 . Xây dựng bài tập lớn cuối khóa
+    + Chọn đề tài : web chat , bán hàng 
+    + Lên giao diện bài tập lớn : fontend và admin
+        - Tự code từ đầu : responsive , code
+        - Template có sẵn : nên dùng cách này
+    + Liệt kê các trang con của đề tài
+    + Giao diện admin : adminLte
+
+2. Kỹ năng viết CV
+    + Nên dùng các template có sẵn trên mạng để tạo CV
+    + Với các fresher : Kinh nghiệm làm việc : nên đưa quá trình học tập ở trường : tình nguyện , báo cáo trên lớp , bảo vệ cuối khóa
+    + Làm sao để CV đến với nhà tuyển dụng nhanh nhất

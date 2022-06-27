@@ -1,0 +1,18 @@
+/* backtotop css */
+#back-to-top {
+    z-index: 9999;
+    height: 40px;
+    width: 38px;
+    line-height: 40px;
+    color: #000;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    font-size: 45px;
+    text-align: center;
+    display: none;
+}
+#back-to-top:hover {
+    color: #f06292;
+}
